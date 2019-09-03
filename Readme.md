@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Алексей Коровацкий](https://up.htmlacademy.ru/htmlcss/26/user/1126493).
-* Наставник: [Вадим Баранов](https://htmlacademy.ru/profile/id1088607).
+* Наставник: [Евгений Котов](https://htmlacademy.ru/profile/id25083).
 
 ---
 
