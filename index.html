@@ -3,13 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   <header>
     <div>
       <img src="img/logo.png" width="220" height="47" alt="Логотип Техномарт">
     </div>
-    <div><a href="#"><img src="img/icon-search.svg" width="17" height="17" alt="Поиск">Поиск:</a></div>
+
+    <div class="search">
+      <form class="search__form" action="index.html" method="post">
+        <label for="site-search">Поиск:</label>
+        <input type="text" name="search" id="site-search">
+      </form>
+    </div>
+
     <div><a href="#"><img src="img/icon-bookmark.svg" width="14" height="16" alt="Закладки">Закладки: 0</a></div>
     <div><a href="#"><img src="img/icon-cart.svg" width="15" height="15" alt="Корзина">Корзина: 0</a></div>
     <div><a href="#"><span></span>Оформить заказ</a></div>
@@ -41,10 +49,10 @@
   </header>
 
   <main>
-    <h1>Интернет-магазин «Техномарт»</h1>
+    <h1 class="visually-hidden">Интернет-магазин «Техномарт»</h1>
 
     <section>
-      <h2>Слайдер</h2>
+      <h2 class="visually-hidden">Слайдер</h2>
       <div>
         <h3>Материалы</h3>
         <span><a href="#">На любой вкус</a></span>
@@ -172,7 +180,7 @@
     </section>
 
     <section>
-      <h2>Популярные Производители:</h2>
+      <h2>Популярные производители:</h2>
       <span><a href="#">Все производители</a></span>
       <div>
         <div>
@@ -250,6 +258,30 @@
       <span><a href="#">Заблудились? Напишите нам!</a></span>
     </section>
 
+    <section>
+      <h2 class="visually-hidden">Карта</h2>
+      <img src="img/map-big.jpg" alt="Карта проезда">
+      <button type="button" name="close-map"><img src="img/icon-close.svg" alt="Закрыть карту"></button>
+    </section>
+
+    <section>
+      <h2 class="visually-hidden">Написать нам</h2>
+      <div class="write-us">
+        <form action="index.html" method="post">
+          <div>
+            <label for="user-name">Ваше имя:</label>
+            <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+            <label for="user-email">Ваш e-mail:</label>
+            <input id="user-email" type="text" name="email" placeholder="email@example.com">
+            <label for="text-message">Текст письма:</label>
+            <textarea id="text-message" name="message" rows="8" cols="80" placeholder="В свободной форме"></textarea>
+            <button type="submit" name="send-message">Отправить</button>
+            <button type="button" name="close-map"><img src="img/icon-close.svg" alt="Закрыть форму"></button>
+          </div>
+        </form>
+      </div>
+    </section>
+
   </main>
 
   <footer>
@@ -277,9 +309,9 @@
          Все права защищены</p>
       <div>
         <ul>
-          <li><a href="#"><img src="img/icon-vk.svg" width="26" height="16" alt=""></a></li>
-          <li><a href="#"><img src="img/icon-fb.svg" width="12" height="22" alt=""></a></li>
-          <li><a href="#"><img src="img/icon-insta.svg" width="21" height="21" alt=""></a></li>
+          <li><a href="#" aria-label="Техномарт во Вконтакте"><img src="img/icon-vk.svg" width="26" height="16" alt="Вконтакте"></a></li>
+          <li><a href="#" aria-label="Техномарт в Facebook"><img src="img/icon-fb.svg" width="12" height="22" alt="Facebook"></a></li>
+          <li><a href="#" aria-label="Техномарт в Instagram"><img src="img/icon-insta.svg" width="21" height="21" alt="Instagram"></a></li>
         </ul>
       </div>
       <p>Обратная связь:
