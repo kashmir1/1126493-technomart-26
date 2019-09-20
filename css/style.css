@@ -1,7 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?59478078');
+  src: url('../font/fontello.eot?59478078#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?59478078') format('woff2'),
+       url('../font/fontello.woff?59478078') format('woff'),
+       url('../font/fontello.ttf?59478078') format('truetype'),
+       url('../font/fontello.svg?59478078#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header-top {
+  background-color: #293449;
+}
+
+.search input{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+
+  background: #293449;
+  border: 0;
+
+  cursor: pointer;
 }

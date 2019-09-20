@@ -1,0 +1,34 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2019 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="radio-off" unicode="&#xe800;" d="M500 690c188 0 340-152 340-340 0-187-152-340-340-340-187 0-340 153-340 340 0 188 153 340 340 340m0 160c-276 0-500-224-500-500s224-500 500-500 500 224 500 500-224 500-500 500z" horiz-adv-x="1000" />
+
+<glyph glyph-name="icon-logout" unicode="&#xe803;" d="M1235 350l-522 500v-353h-353v-294h353v-353z m-1052-321v642c1 22 10 62 59 62h296v117h-296c-128 0-177-106-178-178v-644c1-72 50-178 178-178h296v117h-296c-49 0-58 40-59 62z" horiz-adv-x="1235" />
+
+<glyph glyph-name="radio-on" unicode="&#xe806;" d="M500 690c188 0 340-152 340-340 0-187-152-340-340-340-187 0-340 153-340 340 0 188 153 340 340 340m0 160c-276 0-500-224-500-500s224-500 500-500 500 224 500 500-224 500-500 500z" horiz-adv-x="1000" />
+
+<glyph glyph-name="icon-cart" unicode="&#xe808;" d="M1000 717h-729l-28 133h-243v-133h135l133-600h732v133h-371l371 137z" horiz-adv-x="1000" />
+
+<glyph glyph-name="icon-login" unicode="&#xe809;" d="M875 350l-522 500v-353h-353v-294h353v-353z m124-383h-295v-117h295c128 0 177 106 178 178v644c-1 72-50 178-178 178h-295v-117h295c50 0 59-40 60-62v-642c-1-22-10-62-60-62z" horiz-adv-x="1176" />
+
+<glyph glyph-name="icon-bookmark" unicode="&#xe80b;" d="M875-88c0-34-23-46-51-26l-335 235c-28 20-74 20-103 0l-335-235c-28-20-51-8-51 26v876c0 34 28 62 63 62h750c34 0 62-28 62-62v-876z" horiz-adv-x="875" />
+
+<glyph glyph-name="icon-search" unicode="&#xe80f;" d="M1000-67l-208 209a439 439 0 0 1 90 267 441 441 0 1 1-441-441c101 0 193 34 268 90l208-208 83 83z m-882 476c0 178 145 323 323 323 179 0 324-145 324-323 0-178-145-324-324-324a324 324 0 0 0-323 324z" horiz-adv-x="1000" />
+
+<glyph glyph-name="checkbox-on" unicode="&#xe811;" d="M317 525l-123-123 338-339 606 606-123 123-483-483z m596-545c0-23-20-43-43-43h-740c-23 0-43 20-43 43v740c0 23 20 43 43 43h736l69 69a129 129 0 0 1-65 18h-740c-71 0-130-59-130-130v-740c0-71 59-130 130-130h740c71 0 130 59 130 130v428l-87-87v-341z" horiz-adv-x="1174" />
+
+<glyph glyph-name="checkbox-off" unicode="&#xe813;" d="M870 763c23 0 43-20 43-43v-740c0-23-20-43-43-43h-740c-23 0-43 20-43 43v740c0 23 20 43 43 43h740m0 87h-740c-71 0-130-59-130-130v-740c0-71 59-130 130-130h740c71 0 130 59 130 130v740c0 71-59 130-130 130z" horiz-adv-x="1000" />
+
+<glyph glyph-name="icon-up-dir" unicode="&#xe814;" d="M550 850l-550-1000h1100z" horiz-adv-x="1100" />
+
+<glyph glyph-name="icon-down-dir" unicode="&#xe818;" d="M550-150l-550 1000h1100" horiz-adv-x="1100" />
+
+<glyph glyph-name="icon-user" unicode="&#xe81c;" d="M993 63c-119 41-236 93-289 133-36 28-43 90-29 134 63 50 104 138 104 238 0 156-100 282-223 282s-224-126-224-282c0-100 42-188 104-238 14-44 8-106-29-134-53-40-170-92-289-133s-118-213-118-213h1111s2 172-118 213z" horiz-adv-x="1111" />
+</font>
+</defs>
+</svg>
