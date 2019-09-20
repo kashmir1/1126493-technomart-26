@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   padding: 0;
@@ -23,17 +22,88 @@ a {
   margin: -1px;
 }
 
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?62830095');
+  src: url('../font/fontello.eot?62830095#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?62830095') format('woff2'),
+       url('../font/fontello.woff?62830095') format('woff'),
+       url('../font/fontello.ttf?62830095') format('truetype'),
+       url('../font/fontello.svg?62830095#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.logo-container {
+  width: 220px;
+  height: 47px;
+}
+
+a.logo{
+  display: block;
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  width: 220px;
+  height: 47px;
+}
+
+a.logo:hover {
+  background-image: url(../img/logo-hover.png);
+  background-repeat: no-repeat;
+}
+
+.logo-img {
+  opacity: 0,1;
+}
+
 .header-top {
+  background-color: #293449;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  color: #ffffff;
   background-color: #293449;
 }
 
-.search input{
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 18px;
-  color: #ffffff;
+.header-upper-search input::-moz-placeholder {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
 
-  background: #293449;
-  border: 0;
+.header-search input {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 17px;
+    color: white;
+    outline: 0;
+    border: none;
+    background-color: #293449;
+}
 
-  cursor: pointer;
+.header-search label::before {
+    font-size: 17px;
+    font-family: "fontello";
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: inherit;
+    content: "\e814";
+    cursor: pointer;
+    color: #6a7180;
+}
+
+input[type="text"]:hover + label::before {
+    color: #ffffff;
+    background-color: #212a3a;
+}
+
+input[type="text"]:focus + label::before,
+input[type="text"]:active + label::before {
+    color: #ee3643;
+    background-color: #ffffff;
+}
+
+.header-search input:focus {
+    background-color: #ffffff;
+    color: #000000;
 }
