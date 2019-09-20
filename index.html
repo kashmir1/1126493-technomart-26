@@ -3,20 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
-  <header>
-    <div>
-      <img src="img/logo.png" width="220" height="47" alt="Логотип Техномарт">
+  <header class="main-header">
+    <div class="header-top">
+      <div class="logo">
+        <img src="img/logo.png" width="220" height="47" alt="Логотип Техномарт">
+      </div>
+      <div class="search">
+        <form class="search-form" action="index.html" method="post">
+          <label class="visually-hidden" for="site-search">Поиск:</label>
+          <input type="text" name="search" id="site-search" value="Поиск:">
+        </form>
+      </div>
     </div>
 
-    <div class="search">
-      <form class="search__form" action="index.html" method="post">
-        <label for="site-search">Поиск:</label>
-        <input type="text" name="search" id="site-search">
-      </form>
-    </div>
+
+
 
     <div><a href="#"><img src="img/icon-bookmark.svg" width="14" height="16" alt="Закладки">Закладки: 0</a></div>
     <div><a href="#"><img src="img/icon-cart.svg" width="15" height="15" alt="Корзина">Корзина: 0</a></div>
