@@ -1,18 +1,17 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
-
   background-color: #ffffff;
 }
 
 a {
   text-decoration: none;
 }
+
 
 .visually-hidden {
   position: absolute;
@@ -64,7 +63,11 @@ a.logo:hover {
   background-color: #293449;
 }
 
-.header-upper-search input::-moz-placeholder {
+.header-top a {
+  color: #ffffff;
+}
+
+.header-upper-search input::placeholder {
     font-family: "Cuprum", sans-serif, Arial;
     font-size: 17px;
     line-height: 18px;
@@ -79,6 +82,7 @@ a.logo:hover {
     outline: 0;
     border: none;
     background-color: #293449;
+    cursor: pointer;
 }
 
 .header-search label::before {
@@ -89,7 +93,7 @@ a.logo:hover {
     text-decoration: inherit;
     content: "\e814";
     cursor: pointer;
-    color: #6a7180;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 input[type="text"]:hover + label::before {
@@ -106,4 +110,35 @@ input[type="text"]:active + label::before {
 .header-search input:focus {
     background-color: #ffffff;
     color: #000000;
+}
+
+.bookmark {
+  width: 156px;
+  height: 42px;
+  background-color: #293449;
+}
+
+.bookmark:hover {
+  background-color: #212a3a;
+}
+
+.bookmark:active a{
+  background-color: #161d29;
+  color: #8b8e94;
+}
+
+.bookmark::before {
+  font-size: 17px;
+  font-family: "fontello";
+  content: "\e808";
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.bookmark:hover::before {
+  color: #ffffff;
+  background-color: #212a3a;
+}
+
+.bookmark:active::before {
+  color: rgba(255, 255, 255, 0.5);
 }
