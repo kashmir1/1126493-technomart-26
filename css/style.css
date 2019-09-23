@@ -42,6 +42,7 @@ figure {
   font-weight: normal;
   font-style: normal;
 }
+/* Шапка верх */
 
 .logo-container {
   width: 220px;
@@ -61,9 +62,6 @@ a.logo:hover {
   background-repeat: no-repeat;
 }
 
-.logo-img {
-  opacity: 0,1;
-}
 
 .header-top {
   background-color: #293449;
@@ -215,6 +213,7 @@ input[type="text"]:active + label::before {
   color: rgba(255, 255, 255, 0.5);
 }
 
+/* Шапка низ */
 .header-bottom {
   margin: 0;
   background-color: #f4f7f9;
@@ -341,6 +340,26 @@ input[type="text"]:active + label::before {
   color: #c5c5c5;
 }
 
+.user-links a{
+  font-size: 16px;
+  color: #32425c;
+}
+
+.user-links a:hover{
+  color: #ee3643;
+}
+
+.user-links a:active{
+  color: rgba(50, 66, 92, 0.3);
+}
+
+.user-links li:last-child{
+  list-style-type: disc;
+  list-style-position: inside;
+  color: #32425c;
+  font-size: 12px;
+}
+
 .main-menu {
   list-style: none;
   background-color: #32425c;
@@ -362,6 +381,131 @@ input[type="text"]:active + label::before {
   color: rgba(255, 255, 255, 0.5);
 }
 
+/* Хлебные крошки, заголовок внутренней */
+.breadcrumbs {
+  text-transform: uppercase;
+}
+
+.breadcrumbs a{
+  color: #000000;
+}
+
+.breadcrumbs li::before{
+  display: block;
+  width: 8px;
+  height: 12px;
+  content: "";
+  background-image: url(../img/icon-right-small.svg);
+  background-repeat: no-repeat;
+}
+
+.head-background {
+  background-color: #f2f6f8;
+}
+
+.head-background h1{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+/* Фильтр */
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.filter ul {
+  list-style: none;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.white-button {
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+}
+
+/* Каталог */
+.catalog-item {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+}
+
+.catalog-item a{
+  color: #000000;
+}
+
+.item-action {
+  display: none;
+  background-color: #ffffff;
+}
+
+.item-action {
+  display: none;
+  background-color: #ffffff;
+}
+
+.catalog-item:hover {
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+
+.catalog-item:hover .item-action {
+  display: block;
+}
+
+.buy-button {
+  display: block;
+  margin: 0 auto;
+  width: 135px;
+  height: 35px;
+  background-color: #63a63e;
+  border-radius: 3px;
+  box-shadow: inset 0 -3px 0 #367315;
+}
+
+.catalog-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.item-price {
+  background-image: url("../img/red-button.svg");
+  background-repeat: no-repeat;
+  width: 141px;
+  height: 38px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.item-price span{
+  background-color: #ee3643;
+  font-size: 17px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.old-price {
+ font-size: 17px;
+ font-weight: bold;
+ color: #999999;
+ text-decoration: line-through;
+}
+
+/* О компании */
 .company {
 
 }
@@ -407,6 +551,8 @@ input[type="text"]:active + label::before {
   background-color: #ba2732;
 }
 
+
+/* Контакты */
 .contact {
 
 }
@@ -417,6 +563,7 @@ input[type="text"]:active + label::before {
   font-weight: 400;
 }
 
+/* Футер */
 .site-footer {
   background-color: #32425c;
   font-family: "Cuprum", Arial, sans-serif;

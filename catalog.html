@@ -32,14 +32,14 @@
     <div class="user-panel">
       <a href="#"><span class="user-login">Равшан Джамшутович</span></a>
       <a href="#"><span class="logout"></span></a>
-      <ul>
+      <ul class="user-links">
         <li><a href="#">Мои заказы</a></li>
         <li><a href="#">Личный кабинет</a></li>
       </ul>
     </div>
 
     </div>
-    <nav>
+    <nav class="main-menu">
       <ul>
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Компания</a></li>
@@ -53,15 +53,15 @@
   </header>
 
   <main>
-    <ul>
+    <ul class="breadcrumbs">
       <li><a href="index.html"><img src="img/icon-home.svg" width="15" height="12" alt="На главную"></a></li>
       <li><a href="catalog.html">Каталог</a></li>
       <li><a href="catalog.html">Инструмент</a></li>
       <li>Перфораторы</li>
     </ul>
-    <h1>ПЕРФОРАТОРЫ</h1>
+    <div class="head-background"><h1>ПЕРФОРАТОРЫ</h1></div>
 
-    <section>
+    <section class="filter">
       <h2>Фильтр:</h2>
 
       <form class="" action="index.html" method="post">
@@ -119,13 +119,13 @@
               </li>
             </ul>
           </fieldset>
-          <button type="submit" name="filter-result">Показать</button>
+          <button class="white-button" type="submit" name="filter-result">Показать</button>
         </form>
       </section>
 
-    <section>
+    <section class="catalog">
       <h2 class="visually-hidden">Список перфораторов</h2>
-      <div>
+      <div class="catalog-sorting">
         <span>Сортировка</span>
         <span><a>По цене</a></span>
         <span><a href="#">По типу</a></span>
@@ -133,27 +133,27 @@
         <button type="button" name="up-dir"><img src="img/icon-up-dir.svg" alt="По возрастанию"></button>
         <button type="button" name="down-dir"><img src="img/icon-down-dir.svg" alt="По убыванию"></button>
       </div>
-      <div>
-        <div>
+      <div class="catalog-list">
+        <div class="catalog-item">
           <a href="#">
           <h3><span>Перфоратор</span> <span>BOSCH BFG 3000</span></h3>
           </a>
-          <div>
+          <div class="item-image">
             <a href="#">
               <img src="img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
             </a>
           </div>
-          <span>22500 Р.</span>
-          <span>15500 Р.</span>
-          <div>
-            <span><a href="#"><img src="img/icon-cart.svg" width="15" height="15" alt="Корзина">Купить</a></span>
+          <span class="old-price">22500 Р.</span>
+          <div class="item-price"><span>15500 Р.</span></div>
+          <div class="item-action">
+            <a href="#"><span class="buy-button">Купить</span></a>
             <span><a href="#">В закладки</a></span>
           </div>
           <div>
             <img src="img/new.png" width="60" height="59" alt="Новинка">
           </div>
         </div>
-        <div>
+        <div class="catalog-item">
           <a href="#">
           <h3><span>Перфоратор</span> <span>BOSCH BFG 6000</span></h3>
           </a>
@@ -163,7 +163,7 @@
             </a>
           </div>
           <span>30500 Р.</span>
-          <span>25500 Р.</span>
+          <div class="item-price"><span>25500 Р.</span></div>
           <div>
             <span><a href="#"><img src="img/icon-cart.svg" width="15" height="15" alt="Корзина">Купить</a></span>
             <span><a href="#">В закладки</a></span>
@@ -172,7 +172,7 @@
             <img src="img/new.png" width="60" height="59" alt="Новинка">
           </div>
         </div>
-        <div>
+        <div class="catalog-item">
           <a href="#">
           <h3><span>Перфоратор</span> <span>BOSCH BFG 2000</span></h3>
           </a>
@@ -190,7 +190,7 @@
             <img src="img/new.png" width="60" height="59" alt="Новинка">
           </div>
         </div>
-        <div>
+        <div class="catalog-item">
           <a href="#">
           <h3><span>Перфоратор</span> <span>BOSCH BFG 3000</span></h3>
           </a>
@@ -209,7 +209,7 @@
             <img src="img/new.png" width="60" height="59" alt="Новинка">
           </div>
         </div>
-        <div>
+        <div class="catalog-item">
           <a href="#">
           <h3><span>Перфоратор</span> <span>BOSCH BFG 6000</span></h3>
           </a>
@@ -228,7 +228,7 @@
             <img src="img/new.png" width="60" height="59" alt="Новинка">
           </div>
         </div>
-        <div>
+        <div class="catalog-item">
           <a href="#">
           <h3><span>Перфоратор</span> <span>BOSCH BFG 2000</span></h3>
           </a>
@@ -246,7 +246,7 @@
             <img src="img/new.png" width="60" height="59" alt="Новинка">
           </div>
         </div>
-        <div>
+        <div class="catalog-item">
           <a href="#">
           <h3><span>Перфоратор</span> <span>BOSCH BFG 2000</span></h3>
           </a>
@@ -264,7 +264,7 @@
             <img src="img/new.png" width="60" height="59" alt="Новинка">
           </div>
         </div>
-        <div>
+        <div class="catalog-item">
           <a href="#">
           <h3><span>Перфоратор</span> <span>BOSCH BFG 3000</span></h3>
           </a>
@@ -283,7 +283,7 @@
             <img src="img/new.png" width="60" height="59" alt="Новинка">
           </div>
         </div>
-        <div>
+        <div class="catalog-item">
           <a href="#">
           <h3><span>Перфоратор</span> <span>BOSCH BFG 6000</span></h3>
           </a>
@@ -302,7 +302,7 @@
             <img src="img/new.png" width="60" height="59" alt="Новинка">
           </div>
         </div>
-        <div>
+        <div class="catalog-item">
           <a href="#">
           <h3><span>Перфоратор</span> <span>BOSCH BFG 2000</span></h3>
           </a>
