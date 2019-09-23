@@ -3,41 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
-  <header>
-    <div>
-      <a href="index.html">
-      <img src="img/logo.png" width="220" height="47" alt="Логотип Техномарт"></a>
+    <header class="main-header">
+      <div class="header-top">
+        <div class="logo-container"><a class="logo" href="index.html"></a>
     </div>
-    <div class="search">
-      <form class="search__form" action="index.html" method="post">
-        <label for="site-search">Поиск:</label>
-        <input type="text" name="search" id="site-search">
+    <div class="header-search">
+      <form action="index.html" method="post">
+        <input type="text" name="search" id="search" value="Поиск:">
+        <label for="search"></label>
       </form>
     </div>
-    <div><a href="#"><img src="img/icon-bookmark.svg" width="14" height="16" alt="Закладки">Закладки: 0</a></div>
-    <div><a href="#"><img src="img/icon-cart.svg" width="15" height="15" alt="Корзина">Корзина: 0</a></div>
-    <div><a href="#"><span></span>Оформить заказ</a></div>
-    <div>
-     Интернет-магазин
+    <div class="bookmark"><a href="#">Закладки: 0</a></div>
+    <div class="cart-add"><a href="#">Корзина: 10</a></div>
+    <div class="create-order"><a href="#">Оформить заказ</a></div>
+    <div class="header-bottom">
+     <p class="slogan">Интернет-магазин
      строительных материалов
-     и инструментов для ремонта
-    </div>
-    <div>
-      <span>+7 (812) 555-05-55</span>
-      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-    </div>
-    <div>
-      <span><a href="#"><img src="img/icon-user.svg" width="20" height="18" alt="Пользователь">Равшан Джамшутович</a></span>
-      <span><a href="#"><img src="img/icon-logout.svg" width="21" height="17" alt="Выход"></a></span>
+     и инструментов для ремонта</p>
+
+      <span class="phone">+7 (812) 555-05-55</span>
+      <<p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+    <div class="user-panel">
+      <a href="#"><span class="user-login">Равшан Джамшутович</span></a>
+      <a href="#"><span class="logout"></span></a>
       <ul>
         <li><a href="#">Мои заказы</a></li>
         <li><a href="#">Личный кабинет</a></li>
       </ul>
     </div>
 
+    </div>
     <nav>
       <ul>
         <li><a href="index.html">Главная</a></li>

@@ -12,6 +12,16 @@ a {
   text-decoration: none;
 }
 
+p,
+ul,
+h3,
+h2,
+h1,
+input,
+figure {
+    margin: 0;
+    padding: 0;
+}
 
 .visually-hidden {
   position: absolute;
@@ -122,7 +132,7 @@ input[type="text"]:active + label::before {
   background-color: #212a3a;
 }
 
-.bookmark:active a{
+.bookmark:active a {
   background-color: #161d29;
   color: #8b8e94;
 }
@@ -141,4 +151,330 @@ input[type="text"]:active + label::before {
 
 .bookmark:active::before {
   color: rgba(255, 255, 255, 0.5);
+}
+
+.cart {
+  width: 156px;
+  height: 42px;
+  background-color: #293449;
+}
+
+.cart:hover {
+  background-color: #212a3a;
+}
+
+.cart:active a{
+  background-color: #161d29;
+  color: #8b8e94;
+}
+
+.cart::before {
+  font-size: 17px;
+  font-family: "fontello";
+  content: "\e81f";
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.cart:hover::before {
+  color: #ffffff;
+  background-color: #212a3a;
+}
+
+.cart:active::before {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.cart-add {
+  width: 156px;
+  height: 42px;
+  background-color: #ee3643;
+}
+
+.cart-add::before {
+  font-size: 17px;
+  font-family: "fontello";
+  content: "\e81f";
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.create-order {
+  width: 150px;
+  height: 42px;
+  background-color: #63a63e;
+  text-align: center;
+  cursor: pointer;
+}
+
+.create-order:hover {
+  background-color: #5fbb2d;
+}
+
+.create-order:active,
+.create-order:active a {
+  background-color: #518534;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.header-bottom {
+  margin: 0;
+  background-color: #f4f7f9;
+  font-family: "Cuprum", Arial, sans-serif;
+}
+
+.slogan {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+.slogan p {
+ display: block;
+}
+
+.phone {
+  display: block;
+  width: 270px;
+  height: 45px;
+  border: solid 3px #ffffff;
+  font-size: 21px;
+  color: #ee3643;
+  background: url("../img/icon-phone.svg") no-repeat;
+}
+
+.adress {
+  font-size: 14px;
+  color: #32425c;
+}
+
+.user-panel,
+.user-panel a{
+  font-size: 21px;
+  color: #000000;
+}
+
+.user-enter {
+  display: block;
+  width: 121px;
+  height: 45px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.user-enter:hover {
+  color: #ee3643;
+}
+
+.user-enter:active {
+  color: #c5c5c5;
+}
+
+.user-enter::before {
+  font-family: "fontello";
+  content: "\e81f";
+  color: #c5c5c5;
+}
+
+.user-enter:hover::before {
+  color: #32425c;
+}
+
+.user-enter:active::before {
+  color: #c5c5c5;
+}
+
+.registration {
+  display: block;
+  width: 150px;
+  height: 45px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.registration:hover {
+  color: #ee3643;
+}
+
+.registration:active {
+  color: #c5c5c5;
+}
+
+.user-login {
+  display: block;
+  width: 299px;
+  height: 45px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.user-login::before {
+  font-family: "fontello";
+  content: "\e819";
+  color: #c5c5c5;
+}
+
+.user-login:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.logout {
+  display: block;
+  width: 45px;
+  height: 45px;
+  background-color: #ffffff;
+}
+
+.logout::before {
+  font-family: "fontello";
+  content: "\e811";
+  color: #c5c5c5;
+}
+
+.user-login:hover::before,
+.logout:hover::before {
+  color: #32425c;
+}
+
+.user-login:active::before,
+.logout:active::before {
+  color: #c5c5c5;
+}
+
+.main-menu {
+  list-style: none;
+  background-color: #32425c;
+  font-size: 17px;
+  color: #ffffff;
+  border-bottom: solid 5px #293449;
+}
+
+.main-menu a {
+  color: #ffffff;
+}
+
+.main-menu a:hover,
+.main-menu a:active {
+  background-color: #293449;
+}
+
+.main-menu a:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.company {
+
+}
+
+.company h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.company li {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.company li::before {
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
+  content: "";
+}
+
+.red-button,
+.red-button a  {
+  display: inline-block;
+  height: 38px;
+  border-radius: 3px;
+  background-color: #ee3643;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.red-button a:hover {
+  background-color: #ca2c37;
+}
+
+.red-button a:active {
+  background-color: #ba2732;
+}
+
+.contact {
+
+}
+
+.contact h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.site-footer {
+  background-color: #32425c;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.top-footer {
+  font-size: 18px;
+}
+
+.footer-menu-top a{
+  color: #ffffff;
+}
+
+.footer-menu-bottom a{
+  color: #ffd180;
+}
+
+.footer-menu-top a:hover,
+.footer-menu-bottom a:hover {
+  text-decoration: underline;
+}
+
+.footer-menu-top a:active{
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-menu-bottom a:active{
+  color: rgba(255, 209, 128, 0.5);
+}
+
+.bottom-footer {
+  background-color: #293449;
+  font-size: 16px;
+}
+
+.social a {
+  display: block;
+  background-color: #212a3a;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.social a:hover,
+.social a:active {
+  background-color: #ee3643;
+}
+
+.feedback a {
+  color: #ffd180;
+}
+
+.feedback a:hover {
+  text-decoration: underline;
+}
+
+.feedback a:active {
+  color: #ee3643;
 }
