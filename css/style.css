@@ -486,7 +486,121 @@ input[type="text"]:active + label::before {
 
 /* Популярные товары */
 .popular-title {
+  background-color: #f9f5f0;
+}
 
+.popular-title h2{
+  background-color: #f9f5f0;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+/* Популярные производители */
+.brand-logo {
+  display: block;
+  width: 220px;
+  height: 145px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.brand-logo:hover {
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.brand-logo:active {
+  opacity: 0.3;
+}
+
+/* Сервисы */
+.service {
+  background-color: #f4f8f9;
+}
+
+.service h2{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.tabs {
+  padding: 0px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.tabs-block {
+  display: none;
+}
+
+.tabs-name {
+  display: block;
+  width: 240px;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #32425c;
+  border-bottom: 1px solid #293449;
+  box-shadow: inset 0 -1px 0 #293449;
+  cursor: pointer;
+}
+
+.tabs-name:hover {
+  background-color: #293449;
+}
+
+.tabs-block:checked + .tabs-name{
+  background-color: #ffffff;
+  color: #32425c;
+  border: 0;
+  box-shadow: none;
+}
+
+.tabs::after {
+  content: "";
+  background-image: url("../img/service-shadow.png");
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 279px;
+  position: absolute;
+}
+
+.tabs h3{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+
+.service-delivery {
+  display: none;
+  background-image: url("../img/delivery.png");
+  background-repeat: no-repeat;
+}
+
+.service-guarantee {
+  display: none;
+  background-image: url("../img/guarantee.png");
+  background-repeat: no-repeat;
+}
+
+.service-credit {
+  display: none;
+  background-image: url("../img/credit.png");
+  background-repeat: no-repeat;
+}
+
+ #tab1:checked ~ .service-delivery, #tab2:checked ~ .service-guarantee, #tab3:checked ~ .service-credit {
+  display: block;
 }
 
 /* Хлебные крошки, заголовок внутренней */
@@ -684,11 +798,12 @@ input[type="text"]:active + label::before {
   font-weight: 400;
 }
 
-.company li {
+.company-list{
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
+  list-style: none;
 }
 
 .company li::before {
@@ -742,24 +857,29 @@ input[type="text"]:active + label::before {
   font-size: 18px;
 }
 
-.footer-menu-top a{
+.footer-menu,
+.footer-submenu {
+  list-style: none;
+}
+
+.footer-menu a{
   color: #ffffff;
 }
 
-.footer-menu-bottom a{
+.footer-submenu a{
   color: #ffd180;
 }
 
-.footer-menu-top a:hover,
-.footer-menu-bottom a:hover {
+.footer-menu a:hover,
+.footer-submenu a:hover {
   text-decoration: underline;
 }
 
-.footer-menu-top a:active{
+.footer-menu a:active{
   color: rgba(255, 255, 255, 0.5);
 }
 
-.footer-menu-bottom a:active{
+.footer-submenu a:active{
   color: rgba(255, 209, 128, 0.5);
 }
 
