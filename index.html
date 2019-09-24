@@ -34,7 +34,7 @@
         <a href="#"><span class="registration">Регистрация</span></a>
       </div>
       <nav class="main-menu">
-        <ul>
+        <ul class="site-navigation">
           <li><a>Главная</a></li>
           <li><a href="#">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -47,56 +47,58 @@
     </div>
   </header>
 
-  <main>
+  <main class="container">
     <h1 class="visually-hidden">Интернет-магазин «Техномарт»</h1>
 
-    <section>
+    <section class="slider">
       <h2 class="visually-hidden">Слайдер</h2>
-      <div>
+      <div class="slide-maths">
         <h3>Материалы</h3>
-        <span><a href="#">На любой вкус</a></span>
+        <a class="slide-button" href="#">На любой вкус</a>
         <div class="new">
           New
         </div>
       </div>
-      <div>
+      <div class="slide-tools">
         <h3>Инструмент</h3>
-        <span><a href="#">На все случаи</a></span>
+        <a class="slide-button" href="#">На все случаи</a>
       </div>
-      <div>
+      <div class="slide-tech">
         <h3>Техника</h3>
-        <span><a href="#">Для стройки</a></span>
+        <a class="slide-button" href="#">Для стройки</a></span>
       </div>
-      <div class="big-slide">
-        <div class="big-slide">
+      <div class="slide-big">
+        <div class="slide-img">
          <img src="img/slide1.jpg" alt="Дрели">
-         <img src="img/slide2.jpg" alt="Перфораторы">
+         <img class="visually-hidden" src="img/slide2.jpg" alt="Перфораторы">
         </div>
         <h3>Дрели</h3>
-        <span>Соседям на радость!</span>
-        <span><a href="#">Открыть каталог</a></span>
-        <div>
-          <button type="button" name="Влево"></button>
-          <button type="button" name="Вправо"></button>
+        <span class="slide-big-text">Соседям на радость!</span>
+        <a class="red-button" href="#">Открыть каталог</a>
+        <div class="pointer">
+          <a class="control-left" href="#"><img src="img/icon-left.svg" alt=""></a>
+          <a class="control-right" href="#"><img src="img/icon-right.svg" alt=""></a>
         </div>
-        <div class="big-slide_dots">
-            <a href="#"></a>
-            <a href="#"></a>
+        <div class="slide_dots">
+            <a class="dot-off" href="#"></a>
+            <a class="dot-on" href="#"></a>
         </div>
       </div>
-      <div>
+      <div class="slide-discount">
         <h3>Скидки 50%</h3>
-        <span><a href="#">На 350 товаров</a></span>
+        <a class="slide-button" href="#">На 350 товаров</a>
       </div>
-      <div>
+      <div class="slide-delivery">
         <h3>Доставка</h3>
-        <span><a href="#">Бесплатно</a></span>
+        <a class="slide-button" href="#">Бесплатно</a>
       </div>
     </section>
 
-    <section>
-      <h2>Популярные товары:</h2>
-      <span><a href="#">Все поПулярные товары</a></span>
+    <section class="popular">
+      <div class="popular-title">
+        <h2>Популярные товары:</h2>
+        <a class="red-button" href="#">Все популярные товары</a>
+      </div>
       <div>
         <div>
           <a href="#">

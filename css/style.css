@@ -1,3 +1,6 @@
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
 body {
   margin: 0;
   padding: 0;
@@ -10,17 +13,6 @@ body {
 
 a {
   text-decoration: none;
-}
-
-p,
-ul,
-h3,
-h2,
-h1,
-input,
-figure {
-    margin: 0;
-    padding: 0;
 }
 
 .visually-hidden {
@@ -368,6 +360,14 @@ input[type="text"]:active + label::before {
   border-bottom: solid 5px #293449;
 }
 
+.main-menu {
+  list-style: none;
+  background-color: #32425c;
+  font-size: 17px;
+  color: #ffffff;
+  border-bottom: solid 5px #293449;
+}
+
 .main-menu a {
   color: #ffffff;
 }
@@ -379,6 +379,114 @@ input[type="text"]:active + label::before {
 
 .main-menu a:active {
   color: rgba(255, 255, 255, 0.5);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+/* Слайдер */
+.slider {
+  font-family: "Cuprum", Arial, sans-serif;
+}
+
+.slider h3{
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.slide-maths {
+  background-color: #ffbf47;
+  background-image: url("../img/icon-1.svg");
+  background-repeat: no-repeat;
+}
+
+.slide-tools {
+  background-color: #3bbce3;
+  background-image: url("../img/icon-2.svg");
+  background-repeat: no-repeat;
+}
+
+.slide-tech {
+  background-color: #dc91d8;
+  background-image: url("../img/icon-3.svg");
+  background-repeat: no-repeat;
+}
+
+.slide-big {
+  background-color: #32425c;
+}
+
+.slide-big h3{
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.slide-big-text {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.control-left {
+  display: block;
+}
+
+.control-right {
+  display: block;
+}
+
+.dot-off {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.dot-on {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ee3643;
+  border: 2px solid #ffffff;
+}
+
+.slide-discount {
+  background-color: #8ed78f;
+  background-image: url("../img/icon-4.svg");
+  background-repeat: no-repeat;
+}
+
+.slide-delivery{
+  background-color: #ffc047;
+  background-image: url("../img/icon-5.svg");
+  background-repeat: no-repeat;
+}
+
+.slide-button {
+  display: block;
+  width: 135px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.slide-button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.slide-button:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Популярные товары */
+.popular-title {
+
 }
 
 /* Хлебные крошки, заголовок внутренней */
@@ -506,8 +614,8 @@ input[type="text"]:active + label::before {
 .bookmark-button {
   display: block;
   margin: 0 auto;
-  width: 130px;
-  height: 30px;
+  width: 135px;
+  height: 35px;
   background-color: #ffffff;
   background-origin: content-box;
   border-radius: 3px;
@@ -594,7 +702,6 @@ input[type="text"]:active + label::before {
 .red-button,
 .red-button a  {
   display: inline-block;
-  height: 38px;
   border-radius: 3px;
   background-color: #ee3643;
   font-family: "Cuprum", Arial, sans-serif;
@@ -603,11 +710,11 @@ input[type="text"]:active + label::before {
   color: #ffffff;
 }
 
-.red-button a:hover {
+.red-button:hover {
   background-color: #ca2c37;
 }
 
-.red-button a:active {
+.red-button:active {
   background-color: #ba2732;
 }
 
