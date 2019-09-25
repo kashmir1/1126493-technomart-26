@@ -332,6 +332,10 @@ input[type="text"]:active + label::before {
   color: #c5c5c5;
 }
 
+.user-links {
+  list-style: none;
+}
+
 .user-links a{
   font-size: 16px;
   color: #32425c;
@@ -606,6 +610,7 @@ input[type="text"]:active + label::before {
 /* Хлебные крошки, заголовок внутренней */
 .breadcrumbs {
   text-transform: uppercase;
+  list-style: none;
 }
 
 .breadcrumbs a{
@@ -634,6 +639,56 @@ input[type="text"]:active + label::before {
 }
 
 /* Фильтр */
+.filter-header {
+  background-color: #f7f3ec;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 400;
+  border-radius: 4px;
+}
+
+.filter-name {
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.price-filter {
+
+}
+
+.price-track {
+  background-color: #f7f3ec;
+  border-radius: 4px;
+}
+
+.price-input{
+  background-color: #f7f3ec;
+  font-size: 17px;
+  color: #000000;
+  border: 0;
+  border-radius: 4px;
+}
+
+.price-dash {
+  font-size: 16px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.track-bar {
+ background-color: #d7dcde;
+ width: 180px;
+ height: 2px;
+}
+
+.track-choose {
+ background-color: #00ca74;
+ width: 151px;
+ height: 2px;
+}
+
+
 .filter fieldset {
   border: none;
 }
@@ -658,6 +713,80 @@ input[type="text"]:active + label::before {
   border: 1px solid #e5e5e5;
   border-radius: 3px;
 }
+
+/* Сортировка */
+.catalog-sorting {
+  background-color: #f7f3ec;
+  border-radius: 4px;
+}
+
+.sorting-title {
+  text-transform: uppercase;
+}
+
+.sorting-price {
+  text-transform: uppercase;
+  color: #ee3643;
+  text-decoration: none;
+}
+
+.sorting-type,
+.sorting-functional {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  border-bottom: 1px dotted #ee3643;
+}
+
+.sorting-type:hover,
+.sorting-functional:hover {
+  color: #000000;
+  border-bottom: 1px solid #ee3643;
+}
+
+.sorting-type:active,
+.sorting-functional:active {
+  color: #ee3643;
+  border: 0;
+}
+
+.sorting-up::before {
+  font-family: "fontello";
+  content: "\e818";
+  color: #ee3643;
+}
+
+.sorting-up:hover::before {
+  font-family: "fontello";
+  content: "\e818";
+  color: #000000;
+}
+
+.sorting-up:active::before {
+  font-family: "fontello";
+  content: "\e818";
+  color: #ee3643;
+}
+
+.sorting-down::before {
+  font-family: "fontello";
+  content: "\e80b";
+  color: #c5c5c5;
+}
+
+.sorting-down:hover::before {
+  font-family: "fontello";
+  content: "\e80b";
+  color: #000000;
+}
+
+.sorting-down:active::before {
+  font-family: "fontello";
+  content: "\e80b";
+  color: #ee3643;
+}
+
+
 
 /* Каталог */
 .catalog-item {
@@ -787,7 +916,40 @@ input[type="text"]:active + label::before {
  text-decoration: line-through;
 }
 
+/* Пагинатор */
+.paginator {
+  text-transform: uppercase;
+}
+
+.page-active {
+  display: block;
+  background-color: #ee3643;
+  border-radius: 3px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.around-active {
+  display: block;
+  border-radius: 3px;
+  border: 1px solid #e5e5e5;
+  color: #000000;
+  text-align: center;
+}
+
+.around-active:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.around-active:active {
+  border: 1px solid #ee3643;
+}
+
 /* О компании */
+.catalog-text {
+  background-color: #f2f6f8;
+}
+
 .company {
 
 }
@@ -796,6 +958,7 @@ input[type="text"]:active + label::before {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .company-list{
