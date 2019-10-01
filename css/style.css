@@ -1,5 +1,10 @@
-html { box-sizing: border-box; }
-*, *::before, *::after { box-sizing: inherit; }
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -36,12 +41,31 @@ a {
 }
 /* Шапка верх */
 
+.main-header {
+  margin-bottom: 60px;
+
+  /* Временно для сетки */
+  min-height: 320px;
+}
+
+.header-wrapper {
+  display: flex;
+  width: 100%;
+  background-color: #293449;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .logo-container {
   width: 220px;
-  height: 47px;
 }
 
 a.logo{
+  top: 5px;
   display: block;
   background-image: url(../img/logo.png);
   background-repeat: no-repeat;
@@ -56,11 +80,15 @@ a.logo:hover {
 
 
 .header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #293449;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   color: #ffffff;
   background-color: #293449;
+  height: 42px;
 }
 
 .header-top a {
@@ -75,7 +103,16 @@ a.logo:hover {
     color: #ffffff;
 }
 
+.header-search {
+  width: 270px;
+  height: 42px;
+  /* Временно для сетки */
+  min-height: 42px;
+}
+
 .header-search input {
+    width: 270px;
+    height: 42px;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     color: white;
@@ -116,6 +153,8 @@ input[type="text"]:active + label::before {
   width: 156px;
   height: 42px;
   background-color: #293449;
+  /* Временно для сетки */
+  min-height: 42px;
 }
 
 .bookmark:hover {
@@ -147,6 +186,8 @@ input[type="text"]:active + label::before {
   width: 156px;
   height: 42px;
   background-color: #293449;
+  /* Временно для сетки */
+  min-height: 42px;
 }
 
 .cart:hover {
@@ -178,6 +219,8 @@ input[type="text"]:active + label::before {
   width: 156px;
   height: 42px;
   background-color: #ee3643;
+  /* Временно для сетки */
+  min-height: 42px;
 }
 
 .cart-add::before {
@@ -193,6 +236,8 @@ input[type="text"]:active + label::before {
   background-color: #63a63e;
   text-align: center;
   cursor: pointer;
+  /* Временно для сетки */
+  min-height: 42px;
 }
 
 .create-order:hover {
@@ -207,12 +252,17 @@ input[type="text"]:active + label::before {
 
 /* Шапка низ */
 .header-bottom {
+  display: flex;
   margin: 0;
+  padding-top: 49px;
+  padding-bottom: 47px;
   background-color: #f4f7f9;
   font-family: "Cuprum", Arial, sans-serif;
 }
 
 .slogan {
+  margin-left: 53px;
+  width: 218px;
   font-family: "Cuprum", Arial, sans-serif;
   font-style: italic;
   font-size: 16px;
@@ -365,14 +415,18 @@ input[type="text"]:active + label::before {
 }
 
 .main-menu {
+  display: flex;
+  justify-content: space-around;
   list-style: none;
   background-color: #32425c;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   color: #ffffff;
   border-bottom: solid 5px #293449;
 }
 
 .main-menu a {
+  height: 30px;
   color: #ffffff;
 }
 
@@ -386,7 +440,14 @@ input[type="text"]:active + label::before {
 }
 
 .site-navigation {
+  display: flex;
+  align-items: center;
   list-style: none;
+}
+
+.site-navigation li {
+  display: inline-block;
+  margin-right: 32px;
 }
 
 /* Слайдер */
