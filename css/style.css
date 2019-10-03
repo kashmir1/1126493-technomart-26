@@ -43,12 +43,9 @@ a {
 
 .main-header {
   margin-bottom: 60px;
-
-  /* Временно для сетки */
-  min-height: 320px;
 }
 
-.header-wrapper {
+.header-top-wrapper {
   display: flex;
   width: 100%;
   background-color: #293449;
@@ -57,7 +54,7 @@ a {
 .container {
   width: 940px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0;
 }
 
 .logo-container {
@@ -106,8 +103,6 @@ a.logo:hover {
 .header-search {
   width: 270px;
   height: 42px;
-  /* Временно для сетки */
-  min-height: 42px;
 }
 
 .header-search input {
@@ -152,9 +147,8 @@ input[type="text"]:active + label::before {
 .bookmark {
   width: 156px;
   height: 42px;
+  text-align: center;
   background-color: #293449;
-  /* Временно для сетки */
-  min-height: 42px;
 }
 
 .bookmark:hover {
@@ -185,9 +179,8 @@ input[type="text"]:active + label::before {
 .cart {
   width: 156px;
   height: 42px;
+  text-align: center;
   background-color: #293449;
-  /* Временно для сетки */
-  min-height: 42px;
 }
 
 .cart:hover {
@@ -219,8 +212,6 @@ input[type="text"]:active + label::before {
   width: 156px;
   height: 42px;
   background-color: #ee3643;
-  /* Временно для сетки */
-  min-height: 42px;
 }
 
 .cart-add::before {
@@ -240,6 +231,11 @@ input[type="text"]:active + label::before {
   min-height: 42px;
 }
 
+.button-link {
+  display: inline-block;
+  margin-top: 8px;
+}
+
 .create-order:hover {
   background-color: #5fbb2d;
 }
@@ -251,33 +247,39 @@ input[type="text"]:active + label::before {
 }
 
 /* Шапка низ */
+.header-bottom-wrapper {
+  display: flex;
+  width: 100%;
+  background-color: #f4f7f9;
+}
+
 .header-bottom {
   display: flex;
-  margin: 0;
-  padding-top: 49px;
-  padding-bottom: 47px;
-  background-color: #f4f7f9;
+  padding-top: 46px;
+  padding-bottom: auto;
   font-family: "Cuprum", Arial, sans-serif;
 }
 
 .slogan {
-  margin-left: 53px;
-  width: 218px;
-  font-family: "Cuprum", Arial, sans-serif;
+  width: 290px;
+  padding-left: 52px;
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
 }
 
-.slogan p {
- display: block;
+.header-contact {
+ width: 340px;
+ padding-left: 70px;
 }
 
 .phone {
-  display: block;
+  display: inline-block;
   width: 270px;
-  height: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 72px;
   border: solid 3px #ffffff;
   font-size: 21px;
   color: #ee3643;
@@ -285,20 +287,29 @@ input[type="text"]:active + label::before {
 }
 
 .adress {
+  margin-top: 7px;
+  margin-left: 10px;
   font-size: 14px;
   color: #32425c;
 }
 
-.user-panel,
-.user-panel a{
+.user-panel {
+  display: flex;
+  width: 310px;
+  padding-left: 69px;
   font-size: 21px;
+  height: 45px;
+}
+
+.user-panel a {
   color: #000000;
 }
 
 .user-enter {
-  display: block;
+  display: inline-block;
   width: 121px;
-  height: 45px;
+  padding-top: 14px;
+  text-align: center;
   background-color: #ffffff;
   color: #000000;
 }
@@ -326,9 +337,12 @@ input[type="text"]:active + label::before {
 }
 
 .registration {
-  display: block;
+  display: inline-block;
   width: 150px;
-  height: 45px;
+  padding-top: 14px;
+  padding-bottom: 16px;
+  text-align: center;
+  margin-left: 10px;
   background-color: #ffffff;
   color: #000000;
 }
@@ -406,49 +420,44 @@ input[type="text"]:active + label::before {
   font-size: 12px;
 }
 
-.main-menu {
-  list-style: none;
-  background-color: #32425c;
-  font-size: 17px;
-  color: #ffffff;
-  border-bottom: solid 5px #293449;
-}
 
 .main-menu {
-  display: flex;
-  justify-content: space-around;
   list-style: none;
   background-color: #32425c;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   color: #ffffff;
-  border-bottom: solid 5px #293449;
-}
-
-.main-menu a {
-  height: 30px;
-  color: #ffffff;
-}
-
-.main-menu a:hover,
-.main-menu a:active {
-  background-color: #293449;
-}
-
-.main-menu a:active {
-  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 60px;
 }
 
 .site-navigation {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  padding: 0;
   list-style: none;
+  border-bottom: solid 5px #293449;
 }
 
-.site-navigation li {
+
+.site-navigation a {
   display: inline-block;
-  margin-right: 32px;
+  color: #ffffff;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 31px;
+  padding-right: 31px;
 }
+
+.site-navigation a:hover,
+.site-navigation a:active {
+  background-color: #293449;
+}
+
+.site-navigation a:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 
 /* Слайдер */
 .slider {
@@ -595,6 +604,8 @@ input[type="text"]:active + label::before {
 }
 
 .tabs {
+  display: flex;
+  flex-direction: column;
   padding: 0px;
   margin: 0 auto;
   position: relative;
@@ -1011,11 +1022,23 @@ input[type="text"]:active + label::before {
   background-color: #f2f6f8;
 }
 
-.company {
+.index-column {
+  margin-top: 82px;
+  display: flex;
+  justify-content: space-between;
+}
 
+.index-column p {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.company {
+ width: 550px;
 }
 
 .company h2 {
+  margin: 0;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   font-weight: 400;
@@ -1026,8 +1049,11 @@ input[type="text"]:active + label::before {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 20px;
   list-style: none;
+}
+
+.company-list li{
+  line-height: 40px;
 }
 
 .company li::before {
@@ -1038,39 +1064,74 @@ input[type="text"]:active + label::before {
   content: "";
 }
 
-.red-button,
-.red-button a  {
+.about-button {
   display: inline-block;
+  width: 220px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-radius: 3px;
   background-color: #ee3643;
+  text-align: center;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   color: #ffffff;
 }
 
-.red-button:hover {
+.about-button:hover {
   background-color: #ca2c37;
 }
 
-.red-button:active {
+.about-button:active {
   background-color: #ba2732;
 }
 
 
 /* Контакты */
 .contact {
-
+ width: 400px;
+ padding-left: 90px;
 }
 
 .contact h2 {
+  margin: 0;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   font-weight: 400;
+  text-transform: uppercase;
+}
+
+.map {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.contact-button {
+  display: inline-block;
+  width: 300px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+  background-color: #ee3643;
+  text-align: center;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.contact-button:hover {
+  background-color: #ca2c37;
+}
+
+.contact-button:active {
+  background-color: #ba2732;
 }
 
 /* Футер */
 .site-footer {
+  width: 100%;
+  margin-top: 86px;
   background-color: #32425c;
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
@@ -1078,52 +1139,105 @@ input[type="text"]:active + label::before {
 }
 
 .top-footer {
+  display: flex;
   font-size: 18px;
+  padding-bottom: 26px;
 }
 
-.footer-menu,
-.footer-submenu {
+.footer-text {
+  flex-direction: column;
+  width: 328px;
+}
+
+.footer-logo {
+  margin: 0;
+}
+
+.footer-contact {
+  margin: 0;
+  padding-top: 30px;
+  width: 326px;
+}
+
+.footer-menu {
+  width: 610px;
+  margin-top: 40px;
+}
+
+.footer-menu-top,
+.footer-menu-bot {
+  display: flex;
   list-style: none;
+  justify-content: flex-end;
+  margin: 0;
 }
 
-.footer-menu a{
+.footer-menu-bot {
+  padding-top: 40px;
+}
+
+.footer-menu-top a{
   color: #ffffff;
+  padding-left: 60px;
 }
 
-.footer-submenu a{
+.footer-menu-bot a{
   color: #ffd180;
+  padding-left: 60px;
 }
 
-.footer-menu a:hover,
-.footer-submenu a:hover {
+.footer-menu-top a:hover,
+.footer-menu-bot a:hover {
   text-decoration: underline;
 }
 
-.footer-menu a:active{
+.footer-menu-top a:active{
   color: rgba(255, 255, 255, 0.5);
 }
 
-.footer-submenu a:active{
+.footer-menu-bot a:active{
   color: rgba(255, 209, 128, 0.5);
 }
 
 .bottom-footer {
+  margin: 0;
   background-color: #293449;
   font-size: 16px;
 }
 
-.social a {
-  display: block;
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+}
+
+.copyright {
+  width: 230px;
+}
+
+.social {
+  display: flex;
+  width: 160px;
+  list-style: none;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4px;
   background-color: #212a3a;
   width: 42px;
   height: 42px;
   border-radius: 50%;
 }
 
-.social a:hover,
-.social a:active {
+
+.social-list:hover,
+.social-list:active {
   background-color: #ee3643;
 }
+
 
 .feedback a {
   color: #ffd180;
