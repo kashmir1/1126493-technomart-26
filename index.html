@@ -9,57 +9,53 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="container">
-
-    </div>
-  <header class="main-header">
-    <div class="header-top-wrapper">
-      <div class="container">
-        <div class="header-top">
-          <div class="logo-container"><a class="logo" href="#"></a></div>
-          <div class="header-search">
-            <form action="index.html" method="post">
-              <input type="text" name="search" id="search" value="Поиск:">
-              <label for="search"></label>
-            </form>
-          </div>
-          <div class="bookmark"><a class="button-link" href="#">Закладки: 0</a></div>
-          <div class="cart"><a class="button-link" href="#">Корзина: 0</a></div>
-          <div class="create-order"><a class="button-link" href="#">Оформить заказ</a></div>
-        </div>
-      </div>
-    </div>
-    <div class="header-bottom-wrapper">
-      <div class="container">
-        <div class="header-bottom">
-          <p class="slogan">
-            Интернет-магазин
-            строительных материалов<br>
-            и инструментов для ремонта</p>
-          <div class="header-contact">
-            <span class="phone">+7 (812) 555-05-55</span>
-            <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          </div>
-          <div class="user-panel">
-            <a class="user-enter" href="#">Войти</a>
-            <a class="registration" href="#">Регистрация</a>
+    <header class="main-header">
+      <div class="header-top-wrapper">
+        <div class="container">
+          <div class="header-top">
+            <div class="logo-container"><a class="logo" href="#"></a></div>
+            <div class="header-search">
+              <form action="index.html" method="post">
+                <input type="text" name="search" id="search" value="Поиск:">
+                <label for="search"></label>
+              </form>
+            </div>
+            <div class="bookmark"><a href="#">Закладки: 0</a></div>
+            <div class="cart"><a href="#">Корзина: 0</a></div>
+            <div class="create-order"><a href="#">Оформить заказ</a></div>
           </div>
         </div>
-        <nav class="main-menu">
-          <ul class="site-navigation">
-            <li><a>Главная</a></li>
-            <li><a href="#">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Спецпредложения</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-        </nav>
       </div>
-    </div>
-
-  </header>
+      <div class="header-bottom-wrapper">
+        <div class="container">
+          <div class="header-bottom">
+            <p class="slogan">
+              Интернет-магазин
+              строительных материалов<br>
+              и инструментов для ремонта</p>
+            <div class="header-contact">
+              <span class="phone">+7 (812) 555-05-55</span>
+              <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            </div>
+            <div class="user-panel">
+              <a class="user-enter" href="#">Войти</a>
+              <a class="registration" href="#">Регистрация</a>
+            </div>
+          </div>
+          <nav class="main-menu">
+            <ul class="site-navigation">
+              <li><a>Главная</a></li>
+              <li><a href="#">Компания</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Спецпредложения</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
 
   <main class="container">
     <h1 class="visually-hidden">Интернет-магазин «Техномарт»</h1>
@@ -285,20 +281,20 @@
 
     <section class="visually-hidden">
       <h2 class="visually-hidden">Карта</h2>
-      <img src="img/map-big.jpg" alt="Карта проезда">
-      <button type="button" name="close-map"><img src="img/icon-close.svg" alt="Закрыть карту"></button>
+      <img class="visually-hidden" src="img/map-big.jpg" alt="Карта проезда">
+      <button class="visually-hidden" type="button" name="close-map"><img src="img/icon-close.svg" alt="Закрыть карту"></button>
     </section>
 
     <section class="visually-hidden">
       <h2 class="visually-hidden">Написать нам</h2>
-      <div class="write-us">
-        <form action="index.html" method="post">
-          <div>
-            <label for="user-name">Ваше имя:</label>
-            <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-            <label for="user-email">Ваш e-mail:</label>
-            <input id="user-email" type="text" name="email" placeholder="email@example.com">
-            <label for="text-message">Текст письма:</label>
+      <div class="write-us visually-hidden">
+        <form class="visually-hidden" action="index.html" method="post">
+          <div class="visually-hidden">
+            <label class="visually-hidden" for="user-name">Ваше имя:</label>
+            <input class="visually-hidden" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+            <label class="visually-hidden" for="user-email">Ваш e-mail:</label>
+            <input class="visually-hidden" id="user-email" type="text" name="email" placeholder="email@example.com">
+            <label class="visually-hidden" for="text-message">Текст письма:</label>
             <textarea id="text-message" name="message" rows="8" cols="80" placeholder="В свободной форме"></textarea>
             <button type="submit" name="send-message">Отправить</button>
             <button type="button" name="close-map"><img src="img/icon-close.svg" alt="Закрыть форму"></button>
@@ -335,27 +331,25 @@
                 <li><a href="#">Спецпредложения</a></li>
               </ul>
             </div>
-
-
-            </div>
         </div>
+      </div>
 
-          <div class="bottom-footer">
-            <div class="container footer-wrapper">
-             <div class="footer-wrapper">
-               <p class="copyright">© 2010–2019 Компания «Техномарт»
+      <div class="bottom-footer">
+        <div class="container footer-wrapper">
+          <div class="footer-wrapper">
+            <p class="copyright">© 2010–2019 Компания «Техномарт»
                   Все права защищены</p>
-               <ul class="social">
-                 <li><a class="social-list" href="#" aria-label="Техномарт во Вконтакте"><img src="img/icon-vk.svg" width="26" height="16" alt="Вконтакте"></a></li>
-                 <li><a class="social-list" href="#" aria-label="Техномарт в Facebook"><img src="img/icon-fb.svg" width="12" height="22" alt="Facebook"></a></li>
-                 <li><a class="social-list" href="#" aria-label="Техномарт в Instagram"><img src="img/icon-insta.svg" width="21" height="21" alt="Instagram"></a></li>
-                </ul>
-               <p class="feedback">Обратная связь:
-                 <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-               </p>
-               <p class="feedback">
+            <ul class="social">
+              <li><a class="social-list" href="#" aria-label="Техномарт во Вконтакте"><img src="img/icon-vk.svg" width="26" height="16" alt="Вконтакте"></a></li>
+              <li><a class="social-list" href="#" aria-label="Техномарт в Facebook"><img src="img/icon-fb.svg" width="12" height="22" alt="Facebook"></a></li>
+              <li><a class="social-list" href="#" aria-label="Техномарт в Instagram"><img src="img/icon-insta.svg" width="21" height="21" alt="Instagram"></a></li>
+            </ul>
+           <p class="feedback">Обратная связь:
+             <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+               <p class="academy-link">
                  Разработано —
-                 <a href="https://htmlacademy.ru/intensive/htmlcss/">HTML Academy</a>
+                 <a href="https://htmlacademy.ru/intensive/htmlcss/">htmlacademy.ru</a>
                </p>
              </div>
            </div>
