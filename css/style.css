@@ -45,7 +45,7 @@ a {
 /* Шапка верх */
 
 .main-header {
-    margin-bottom: 60px;
+    margin-bottom: 25px;
 }
 
 .header-top-wrapper {
@@ -266,7 +266,9 @@ input[type="text"]:active + label::before {
 
 .slogan {
     width: 290px;
+    margin: 0;
     padding-left: 52px;
+    padding-top: 5px;
     font-style: italic;
     font-size: 16px;
     line-height: 23px;
@@ -275,12 +277,13 @@ input[type="text"]:active + label::before {
 
 .header-contact {
     width: 340px;
-    padding-left: 70px;
+    margin-left: 40px;
 }
 
 .phone {
     display: inline-block;
     width: 270px;
+    height: 45px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 72px;
@@ -301,7 +304,7 @@ input[type="text"]:active + label::before {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding-top: 10px;
+    margin-right: 20px;
     width: 300px;
     padding-left: 20px;
     font-size: 21px;
@@ -312,16 +315,20 @@ input[type="text"]:active + label::before {
     color: #000000;
 }
 
-.aaa {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+.user-panel-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
-.bbb {
-  display: flex;
-  flex-direction: row;
-  width: 300px;
+.user-autorize {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    height: 45px;
+    background-color: #ffffff;
 }
 
 .user-enter {
@@ -329,6 +336,7 @@ input[type="text"]:active + label::before {
     align-items: center;
     justify-content: center;
     width: 121px;
+    height: 45px;
     text-align: center;
     background-color: #ffffff;
     color: #000000;
@@ -361,6 +369,7 @@ input[type="text"]:active + label::before {
     align-items: center;
     justify-content: center;
     width: 150px;
+    height: 45px;
     margin-left: 10px;
     background-color: #ffffff;
     color: #000000;
@@ -376,7 +385,6 @@ input[type="text"]:active + label::before {
 
 .user-login {
     display: flex;
-    background-color: #ffffff;
     color: #000000;
 }
 
@@ -413,14 +421,16 @@ input[type="text"]:active + label::before {
 
 .user-links {
   display: flex;
-  margin: 0;
-  padding: 0;
+  align-items: center;
+  margin-top: 7px;
+  padding-left: 10px;
   list-style: none;
 }
 
 .user-links a {
-    font-size: 16px;
-    color: #32425c;
+   text-decoration: underline;
+   font-size: 16px;
+   color: #32425c;
 }
 
 .user-links a:hover {
@@ -432,6 +442,8 @@ input[type="text"]:active + label::before {
 }
 
 .user-links li:last-child {
+    margin-top: 5px;
+    padding-left: 15px;
     list-style-type: disc;
     list-style-position: inside;
     color: #32425c;
@@ -701,22 +713,35 @@ input[type="text"]:active + label::before {
 
 /* Хлебные крошки, заголовок внутренней */
 .breadcrumbs {
+    display: flex;
+    justify-content: flex-start;
     text-transform: uppercase;
     list-style: none;
+    padding: 0;
 }
 
 .breadcrumbs a {
     color: #000000;
 }
 
-.breadcrumbs li::before {
-    display: block;
+.breadcrumbs li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.breadcrumbs li:first-child {
+  margin-left: 0;
+}
+
+.breadcrumbs li:nth-child(n+2)::before {
+    display: inline-block;
     width: 8px;
     height: 12px;
     content: "";
     background-image: url(../img/icon-right-small.svg);
     background-repeat: no-repeat;
 }
+
 
 .head-background {
     background-color: #f2f6f8;
@@ -728,9 +753,16 @@ input[type="text"]:active + label::before {
     font-size: 30px;
     text-transform: uppercase;
     color: #32425c;
+    padding-top: 33px;
+    padding-bottom: 35px;
+    padding-left: 30px;
 }
 
 /* Фильтр */
+.filter {
+  width: 220px;
+}
+
 .filter-header {
     background-color: #f7f3ec;
     text-transform: uppercase;
@@ -781,18 +813,25 @@ input[type="text"]:active + label::before {
 
 .filter fieldset {
     border: none;
+    padding: 0;
+    margin: 0;
 }
 
 .filter legend {
+    width: 220px;
+    padding: 0;
+    padding-top: 25px;
     font-size: 17px;
     font-weight: bold;
     text-transform: uppercase;
+    border-top: 1px solid #e5e5e5;
 }
 
 .filter ul {
     list-style: none;
     font-size: 15px;
     text-transform: uppercase;
+    padding: 0;
 }
 
 .white-button {
@@ -876,13 +915,34 @@ input[type="text"]:active + label::before {
     color: #ee3643;
 }
 
-
+.catalog-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
 
 /* Каталог */
+.catalog {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .catalog-item {
+    width: 220px;
+    margin-bottom: 20px;
+    margin-right: 20px;
     background: #ffffff;
     border: 1px solid #e5e5e5;
     text-align: center;
+}
+
+.catalog-item:nth-child(3n) {
+    margin-right: 0;
 }
 
 .catalog-item a {
