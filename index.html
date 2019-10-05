@@ -59,58 +59,68 @@
 
   <main class="container">
     <h1 class="visually-hidden">Интернет-магазин «Техномарт»</h1>
+
 <!--Слайдер-->
     <section class="slider">
       <h2 class="visually-hidden">Слайдер</h2>
-      <div class="slide-maths">
-        <h3>Материалы</h3>
-        <a class="slide-button" href="#">На любой вкус</a>
-        <div class="new">
-          New
+      <div class="slider-top-section">
+        <div class="slide-maths">
+          <h3>Материалы</h3>
+          <a class="slide-button" href="#">На любой вкус</a>
+          <div class="new">
+            New
+          </div>
+        </div>
+        <div class="slide-tools">
+          <h3>Инструмент</h3>
+          <a class="slide-button" href="#">На все случаи</a>
+        </div>
+        <div class="slide-tech">
+          <h3>Техника</h3>
+          <a class="slide-button" href="#">Для стройки</a>
         </div>
       </div>
-      <div class="slide-tools">
-        <h3>Инструмент</h3>
-        <a class="slide-button" href="#">На все случаи</a>
-      </div>
-      <div class="slide-tech">
-        <h3>Техника</h3>
-        <a class="slide-button" href="#">Для стройки</a>
-      </div>
-      <div class="slide-big">
-        <div class="slide-img">
-         <img src="img/slide1.jpg" alt="Дрели">
-         <img class="visually-hidden" src="img/slide2.jpg" alt="Перфораторы">
+      <div class="slider-bottom-section">
+        <div class="slide-big">
+          <div class="slide-img">
+           <img src="img/slide1.jpg" alt="Дрели">
+           <img class="visually-hidden" src="img/slide2.jpg" alt="Перфораторы">
+          </div>
+          <h3>Дрели</h3>
+          <span class="slide-big-text">Соседям на радость!</span>
+          <a class="big-slide-button red-button" href="#">Открыть каталог</a>
+          <div class="pointer">
+            <a class="control-left" href="#"><img src="img/icon-left.svg" alt=""></a>
+            <a class="control-right" href="#"><img src="img/icon-right.svg" alt=""></a>
+          </div>
+          <div class="slide_dots">
+              <a class="dot-off" href="#"></a>
+              <a class="dot-on" href="#"></a>
+          </div>
         </div>
-        <h3>Дрели</h3>
-        <span class="slide-big-text">Соседям на радость!</span>
-        <a class="red-button" href="#">Открыть каталог</a>
-        <div class="pointer">
-          <a class="control-left" href="#"><img src="img/icon-left.svg" alt=""></a>
-          <a class="control-right" href="#"><img src="img/icon-right.svg" alt=""></a>
+        <div class="slider-bottom-subsection">
+          <div class="slide-discount">
+            <h3>Скидки 50%</h3>
+            <a class="slide-button" href="#">На 350 товаров</a>
+          </div>
+          <div class="slide-delivery">
+            <h3>Доставка</h3>
+            <a class="slide-button" href="#">Бесплатно</a>
+          </div>
         </div>
-        <div class="slide_dots">
-            <a class="dot-off" href="#"></a>
-            <a class="dot-on" href="#"></a>
-        </div>
-      </div>
-      <div class="slide-discount">
-        <h3>Скидки 50%</h3>
-        <a class="slide-button" href="#">На 350 товаров</a>
-      </div>
-      <div class="slide-delivery">
-        <h3>Доставка</h3>
-        <a class="slide-button" href="#">Бесплатно</a>
+
+
       </div>
     </section>
+
 <!--Популярные товары-->
     <section class="popular-item">
       <div class="popular-title">
         <h2>Популярные товары:</h2>
-        <a class="red-button" href="#">Все популярные товары</a>
+        <a class="popular-button red-button" href="#">Все популярные товары</a>
       </div>
-      <div>
-        <div class="catalog-item">
+      <div class="catalog-list">
+        <div class="catalog-popular-item">
           <a href="#">
           <h3><span>Перфоратор</span> <span>BOSCH BFG 9000</span></h3>
           </a>
@@ -130,7 +140,7 @@
           </div>
         </div>
 
-        <div class="catalog-item">
+        <div class="catalog-popular-item">
           <a href="#">
           <h3><span>Перфоратор</span> <span>BOSCH BFG 3000</span></h3>
           </a>
@@ -150,7 +160,7 @@
           </div>
         </div>
 
-        <div class="catalog-item">
+        <div class="catalog-popular-item">
           <a href="#">
           <h3><span>Перфоратор</span> <span>BOSCH BFG 6000</span></h3>
           </a>
@@ -170,7 +180,7 @@
           </div>
         </div>
 
-        <div class="catalog-item">
+        <div class="catalog-popular-item">
           <a href="#">
           <h3><span>Перфоратор</span> <span>BOSCH BFG 2000</span></h3>
           </a>
@@ -194,7 +204,7 @@
     <section class="popular-brand">
       <div class="popular-title">
         <h2>Популярные производители:</h2>
-        <a class="red-button" href="#">Все производители</a>
+        <a class="popular-button red-button" href="#">Все производители</a>
       </div>
       <div class="brands">
         <a class="brand-logo" href="#"><img src="img/brand-bosch.jpg" width="126" height="37" alt="BOSCH"></a>
@@ -260,7 +270,7 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a class="about-button" href="#">Подробнее о компании</a>
+        <a class="about-button red-button" href="#">Подробнее о компании</a>
       </section>
 
       <section class="contact">
@@ -274,7 +284,7 @@
             <img src="img/map.jpg" width="300" height="158" alt="Адрес">
           </a>
         </div>
-        <a class="contact-button" href="#">Заблудились? Напишите нам!</a>
+        <a class="contact-button red-button" href="#">Заблудились? Напишите нам!</a>
       </section>
     </div>
 

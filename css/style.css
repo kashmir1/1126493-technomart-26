@@ -488,10 +488,43 @@ input[type="text"]:active + label::before {
     color: rgba(255, 255, 255, 0.5);
 }
 
+/* Красные кнопки */
+.red-button {
+    border-radius: 3px;
+    background-color: #ee3643;
+    text-align: center;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.red-button:hover {
+    background-color: #ca2c37;
+}
+
+.red-button:active {
+    background-color: #ba2732;
+}
 
 /* Слайдер */
 .slider {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 54px;
     font-family: "Cuprum", Arial, sans-serif;
+}
+
+.slider-top-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.slider-bottom-section {
+    display: flex;
+    justify-content: space-between;
 }
 
 .slider h3 {
@@ -501,24 +534,34 @@ input[type="text"]:active + label::before {
 }
 
 .slide-maths {
+    width: 300px;
+    height: 123px;
+    padding-left: 25px;
     background-color: #ffbf47;
     background-image: url("../img/icon-1.svg");
     background-repeat: no-repeat;
 }
 
 .slide-tools {
+    width: 300px;
+    height: 123px;
+    padding-left: 25px;
     background-color: #3bbce3;
     background-image: url("../img/icon-2.svg");
     background-repeat: no-repeat;
 }
 
 .slide-tech {
+    width: 300px;
+    height: 123px;
+    padding-left: 25px;
     background-color: #dc91d8;
     background-image: url("../img/icon-3.svg");
     background-repeat: no-repeat;
 }
 
 .slide-big {
+    width: 620px;
     background-color: #32425c;
 }
 
@@ -558,21 +601,48 @@ input[type="text"]:active + label::before {
     border: 2px solid #ffffff;
 }
 
+.slide-big-button {
+
+}
+
+.slider-bottom-subsection {
+    display: flex;
+    flex-direction: column;
+}
+
 .slide-discount {
+    width: 300px;
+    height: 123px;
+    padding-left: 25px;
+    margin-bottom: 20px;
     background-color: #8ed78f;
     background-image: url("../img/icon-4.svg");
     background-repeat: no-repeat;
+
 }
 
 .slide-delivery {
+    width: 300px;
+    height: 123px;
+    padding-left: 25px;
     background-color: #ffc047;
     background-image: url("../img/icon-5.svg");
     background-repeat: no-repeat;
 }
 
+.big-slide-button {
+  display: inline-block;
+  width: 195px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .slide-button {
-    display: block;
+    display: flex;
     width: 135px;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 3px;
     font-size: 14px;
@@ -589,24 +659,80 @@ input[type="text"]:active + label::before {
 }
 
 /* Популярные товары */
+
+
 .popular-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 22px;
+    margin-bottom: 20px;
     background-color: #f9f5f0;
+}
+
+.popular-button {
+    display: inline-block;
+    width: 253px;
+    margin-right: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .popular-title h2 {
-    background-color: #f9f5f0;
     font-family: "Cuprum", Arial, sans-serif;
-    font-size: 30px;
     font-weight: 400;
+    font-size: 30px;
     text-transform: uppercase;
     color: #32425c;
+    margin: 0;
+    padding-top: 33px;
+    padding-bottom: 35px;
+    padding-left: 30px;
+}
+
+.catalog-popular-item {
+    width: 220px;
+    margin-right: 20px;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+.catalog-popular-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.catalog-popular-item a {
+    color: #000000;
+}
+
+.catalog-popular-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.catalog-popular-item:hover {
+    box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.catalog-popular-item:hover .item-action {
+    display: block;
 }
 
 /* Популярные производители */
+.brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .brand-logo {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 220px;
     height: 145px;
+    margin-bottom: 20px;
     border: 1px solid #eaeaea;
     background-color: #ffffff;
     text-align: center;
@@ -954,11 +1080,6 @@ input[type="text"]:active + label::before {
     background-color: #ffffff;
 }
 
-.item-action {
-    display: none;
-    background-color: #ffffff;
-}
-
 .catalog-item:hover {
     box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
@@ -1147,22 +1268,8 @@ input[type="text"]:active + label::before {
     width: 220px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-radius: 3px;
-    background-color: #ee3643;
-    text-align: center;
-    font-family: "Cuprum", Arial, sans-serif;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #ffffff;
 }
 
-.about-button:hover {
-    background-color: #ca2c37;
-}
-
-.about-button:active {
-    background-color: #ba2732;
-}
 
 
 /* Контакты */
@@ -1189,22 +1296,8 @@ input[type="text"]:active + label::before {
     width: 300px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-radius: 3px;
-    background-color: #ee3643;
-    text-align: center;
-    font-family: "Cuprum", Arial, sans-serif;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #ffffff;
 }
 
-.contact-button:hover {
-    background-color: #ca2c37;
-}
-
-.contact-button:active {
-    background-color: #ba2732;
-}
 
 /* Футер */
 .site-footer {
