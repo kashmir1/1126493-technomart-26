@@ -111,6 +111,7 @@ a.logo:hover {
 .header-search input {
     width: 270px;
     height: 42px;
+    padding-left: 49px;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     color: white;
@@ -121,10 +122,11 @@ a.logo:hover {
 }
 
 .header-search label::before {
+    position: relative;
+    top: -32px;
+    left: 17px;
     font-size: 17px;
     font-family: "fontello";
-    display: inline-block;
-    vertical-align: top;
     text-decoration: inherit;
     content: "\e814";
     cursor: pointer;
