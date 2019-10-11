@@ -1715,3 +1715,69 @@ input[type="text"]:active + label::before {
 .academy-link a:active {
     color: #ee3643;
 }
+
+.modal {
+  position: fixed;
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+  border-top: 7px solid #ff5357;
+}
+
+.modal-write-us {
+  top: 120px;
+  left: 50%;
+  width: 620px;
+  margin-left: -310px;
+  padding-top: 48px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+  border: 0;
+  background-image: url("../img/icon-close.svg");
+}
+
+.write-us-form input[type="text"],
+.write-us-form textarea {
+  width: 100%;
+  border: 2px solid #dee3e4;
+  border-radius: 3px;
+}
+
+.write-us-form input::placeholder {
+  color: #a9a9a9;
+  font-size: 13px;
+}
+
+.write-us-form label {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+}
+
+.user-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-data input[type="text"]{
+  width: 220px;
+  height: 34px;
+  margin-top: 8px;
+  padding: 0;
+  padding-left: 14px;
+}
+
+.user-data label {
+  margin-right: 20px;
+}
+
+.user-data label:last-child {
+  margin-right: 0;
+}
