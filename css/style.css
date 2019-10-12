@@ -1724,13 +1724,21 @@ input[type="text"]:active + label::before {
 }
 
 .modal-write-us {
+  /* display: none; */
   top: 120px;
   left: 50%;
   width: 620px;
   margin-left: -310px;
-  padding-top: 48px;
-  padding-left: 80px;
-  padding-right: 80px;
+}
+
+.write-us-form {
+  width: 100%;
+}
+
+.user-block {
+  margin-top: 48px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .modal-close {
@@ -1741,19 +1749,36 @@ input[type="text"]:active + label::before {
   height: 21px;
   cursor: pointer;
   border: 0;
+  background-color: rgba(255, 255, 255, 0);
   background-image: url("../img/icon-close.svg");
 }
 
 .write-us-form input[type="text"],
 .write-us-form textarea {
   width: 100%;
+  margin-top: 8px;
+  margin-bottom: 22px;
   border: 2px solid #dee3e4;
   border-radius: 3px;
+  resize: none;
 }
 
-.write-us-form input::placeholder {
+.write-us-form input[type="text"]:hover,
+.write-us-form textarea:hover {
+  border: 2px solid #b5b5b5;
+}
+
+.write-us-form input[type="text"]:focus,
+.write-us-form textarea:focus {
+  border: 2px solid #ee3643;
+}
+
+.write-us-form input::placeholder,
+.write-us-form textarea::placeholder {
   color: #a9a9a9;
   font-size: 13px;
+  padding-left: 14px;
+  padding-top: 12px;
 }
 
 .write-us-form label {
@@ -1769,9 +1794,7 @@ input[type="text"]:active + label::before {
 .user-data input[type="text"]{
   width: 220px;
   height: 34px;
-  margin-top: 8px;
   padding: 0;
-  padding-left: 14px;
 }
 
 .user-data label {
@@ -1780,4 +1803,35 @@ input[type="text"]:active + label::before {
 
 .user-data label:last-child {
   margin-right: 0;
+}
+
+.button-block {
+  background-color: #f4f4f4;
+  padding: 37px 80px;
+  margin-top: 11px;
+}
+
+.form-button {
+  border: 0;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.modal-map {
+  display: none;
+  position: fixed;
+  top: 120px;
+  left: 50%;
+  width: 940px;
+  height: 447px;
+  margin-left: -470px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
+
+.modal-cart-add {
+  top: 120px;
+  left: 50%;
+  width: 620px;
+  margin-left: -310px;
 }
