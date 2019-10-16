@@ -27,6 +27,7 @@ img {
   height: auto;
 }
 
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -82,14 +83,14 @@ input[type="radio"].visually-hidden {
 a.logo {
     top: 5px;
     display: block;
-    background-image: url(../img/logo.png);
+    background-image: url("../img/logo.png");
     background-repeat: no-repeat;
     width: 220px;
     height: 47px;
 }
 
 a.logo:hover {
-    background-image: url(../img/logo-hover.png);
+    background-image: url("../img/logo-hover.png");
     background-repeat: no-repeat;
 }
 
@@ -493,6 +494,7 @@ input[type="text"]:active + label::before {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 0;
     list-style: none;
     border-bottom: solid 5px #293449;
@@ -983,7 +985,7 @@ input[type="text"]:active + label::before {
     width: 8px;
     height: 12px;
     content: "";
-    background-image: url(../img/icon-right-small.svg);
+    background-image: url("../img/icon-right-small.svg");
     background-repeat: no-repeat;
 }
 
@@ -1569,6 +1571,7 @@ input[type="text"]:active + label::before {
 }
 
 .map {
+    display: inline-block;
     margin-top: 40px;
     margin-bottom: 40px;
 }
@@ -1724,7 +1727,7 @@ input[type="text"]:active + label::before {
 }
 
 .modal-write-us {
-  /* display: none; */
+  display: none;
   top: 120px;
   left: 50%;
   width: 620px;
@@ -1739,18 +1742,6 @@ input[type="text"]:active + label::before {
   margin-top: 48px;
   margin-left: 80px;
   margin-right: 80px;
-}
-
-.modal-close {
-  position: absolute;
-  top: 9px;
-  right: 9px;
-  width: 21px;
-  height: 21px;
-  cursor: pointer;
-  border: 0;
-  background-color: rgba(255, 255, 255, 0);
-  background-image: url("../img/icon-close.svg");
 }
 
 .write-us-form input[type="text"],
@@ -1794,7 +1785,6 @@ input[type="text"]:active + label::before {
 .user-data input[type="text"]{
   width: 220px;
   height: 34px;
-  padding: 0;
 }
 
 .user-data label {
@@ -1806,6 +1796,7 @@ input[type="text"]:active + label::before {
 }
 
 .button-block {
+  display: flex;
   background-color: #f4f4f4;
   padding: 37px 80px;
   margin-top: 11px;
@@ -1830,8 +1821,70 @@ input[type="text"]:active + label::before {
 }
 
 .modal-cart-add {
+  display: none;
+  flex-direction: column;
   top: 120px;
   left: 50%;
   width: 620px;
   margin-left: -310px;
+}
+
+.cart-add-head {
+  background-image: url("../img/icon-mark.svg");
+  background-repeat: no-repeat;
+  background-position: 82px 48px;
+}
+
+.modal-cart-add h2{
+  margin: 0;
+  margin-top: 70px;
+  margin-bottom: 75px;
+  margin-left: 32px;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.modal-show {
+  display: block;
+}
+
+.modal-close,
+.map-close {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url("../img/icon-close.svg");
+}
+
+
+.form-cart-button {
+  border: 0;
+  width: 220px;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.white-form-button {
+  margin-left: 20px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  text-align: center;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000000;
+  border: 0;
+  width: 220px;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
