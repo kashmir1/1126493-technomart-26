@@ -1,14 +1,13 @@
 var cartAdd = document.querySelectorAll(".buy-button");
 var popupCartAdd = document.querySelector(".modal-cart-add");
-var closeForm = document.querySelector(".modal-close");
+var closeForm = document.querySelector(".modal-cart-close");
 
-
-cartAdd.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popupCartAdd.classList.add("modal-show");
-  userName.focus();
-});
-
+for (var i = 0; i < cartAdd.length; i++) {
+  cartAdd[i].addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popupCartAdd.classList.add("modal-show");
+  });
+}
 closeForm.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupCartAdd.classList.remove("modal-show");
@@ -16,7 +15,7 @@ closeForm.addEventListener("click", function (evt) {
 
 window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {
-    if (popupWriteUs.classList.contains("modal-show")) {
+    if (popupCartAdd.classList.contains("modal-show")) {
       evt.preventDefault();
       popupCartAdd.classList.remove("modal-show");
     }

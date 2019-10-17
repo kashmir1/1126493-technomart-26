@@ -309,9 +309,10 @@ input[type="text"]:active + label::before {
 
 .phone {
     display: inline-block;
+    vertical-align: top;
     width: 270px;
     height: 45px;
-    padding-top: 10px;
+    padding-top: 7px;
     padding-bottom: 10px;
     padding-left: 72px;
     border: solid 3px #ffffff;
@@ -503,6 +504,7 @@ input[type="text"]:active + label::before {
 
 .site-navigation a {
     display: inline-block;
+    vertical-align: top;
     color: #ffffff;
     padding-top: 18px;
     padding-bottom: 18px;
@@ -566,6 +568,7 @@ input[type="text"]:active + label::before {
 
 .new {
     display: inline-block;
+    vertical-align: top;
     position: absolute;
     top: 8px;
     right: -22px;
@@ -711,6 +714,7 @@ input[type="text"]:active + label::before {
     bottom: 22px;
     left: 26px;
     display: inline-block;
+    vertical-align: top;
     width: 195px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -751,6 +755,7 @@ input[type="text"]:active + label::before {
 
 .popular-button {
     display: inline-block;
+    vertical-align: top;
     width: 253px;
     margin-right: 24px;
     padding-top: 10px;
@@ -895,6 +900,16 @@ input[type="text"]:active + label::before {
     color: #ffffff;
 }
 
+.tabs-list:first-child {
+    background-color: #ffffff;
+    border: 0;
+    box-shadow: 0 0 0;
+}
+
+.tabs-list:first-child a {
+    color: #32425c;
+}
+
 .tabs-list a {
   color: #ffffff;
 }
@@ -972,6 +987,7 @@ input[type="text"]:active + label::before {
 
 .breadcrumbs li {
   display: inline-block;
+  vertical-align: top;
   margin-left: 17px;
 }
 
@@ -982,6 +998,7 @@ input[type="text"]:active + label::before {
 .breadcrumbs li:nth-child(n+2)::before {
     margin-right: 19px;
     display: inline-block;
+    vertical-align: baseline;
     width: 8px;
     height: 12px;
     content: "";
@@ -1025,6 +1042,7 @@ input[type="text"]:active + label::before {
 
 .filter-name {
     display: inline-block;
+    vertical-align: top;
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 17px;
@@ -1066,6 +1084,7 @@ input[type="text"]:active + label::before {
 
 .price-dash {
     display: inline-block;
+    vertical-align: top;
     padding-top: 10px;
     font-size: 16px;
     color: #444444;
@@ -1127,43 +1146,43 @@ input[type="text"]:active + label::before {
 }
 
 .filter-input-checkbox + label::before {
-  content: "";
-  position: absolute;
-  width: 23px;
-  height: 23px;
-  top: -2px;
-  left: 0;
-  background-image: url("../img/checkbox-off.svg");
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    top: -2px;
+    left: 0;
+    background-image: url("../img/checkbox-off.svg");
 }
 
 .filter-input-checkbox:checked + label::after {
-  content: "";
-  position: absolute;
-  width: 27px;
-  height: 23px;
-  top: -2px;
-  left: 0;
-  background-image: url("../img/checkbox-on.svg");
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 23px;
+    top: -2px;
+    left: 0;
+    background-image: url("../img/checkbox-on.svg");
 }
 
 .filter-input-radio + label::before {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  top: -2px;
-  left: 0;
-  background-image: url("../img/radio-off.svg");
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -2px;
+    left: 0;
+    background-image: url("../img/radio-off.svg");
 }
 
 .filter-input-radio:checked + label::after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  top: -2px;
-  left: 0;
-  background-image: url("../img/radio-on.svg");
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -2px;
+    left: 0;
+    background-image: url("../img/radio-on.svg");
 }
 
 .white-button {
@@ -1547,6 +1566,7 @@ input[type="text"]:active + label::before {
 
 .about-button {
     display: inline-block;
+    vertical-align: top;
     position: absolute;
     bottom: 0;
     width: 220px;
@@ -1572,12 +1592,14 @@ input[type="text"]:active + label::before {
 
 .map {
     display: inline-block;
+    vertical-align: top;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
 .contact-button {
     display: inline-block;
+    vertical-align: top;
     width: 300px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -1720,43 +1742,43 @@ input[type="text"]:active + label::before {
 }
 
 .modal {
-  position: fixed;
-  background-color: #ffffff;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
-  border-top: 7px solid #ff5357;
+    position: fixed;
+    background-color: #ffffff;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+    border-top: 7px solid #ff5357;
 }
 
 .modal-write-us {
-  display: none;
-  top: 120px;
-  left: 50%;
-  width: 620px;
-  margin-left: -310px;
+    display: none;
+    top: 120px;
+    left: 50%;
+    width: 620px;
+    margin-left: -310px;
 }
 
 .write-us-form {
-  width: 100%;
+    width: 100%;
 }
 
 .user-block {
-  margin-top: 48px;
-  margin-left: 80px;
-  margin-right: 80px;
+    margin-top: 48px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 .write-us-form input[type="text"],
 .write-us-form textarea {
-  width: 100%;
-  margin-top: 8px;
-  margin-bottom: 22px;
-  border: 2px solid #dee3e4;
-  border-radius: 3px;
-  resize: none;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 22px;
+    border: 2px solid #dee3e4;
+    border-radius: 3px;
+    resize: none;
 }
 
 .write-us-form input[type="text"]:hover,
 .write-us-form textarea:hover {
-  border: 2px solid #b5b5b5;
+    border: 2px solid #b5b5b5;
 }
 
 .write-us-form input[type="text"]:focus,
@@ -1766,125 +1788,129 @@ input[type="text"]:active + label::before {
 
 .write-us-form input::placeholder,
 .write-us-form textarea::placeholder {
-  color: #a9a9a9;
-  font-size: 13px;
-  padding-left: 14px;
-  padding-top: 12px;
+    color: #a9a9a9;
+    font-size: 13px;
+    padding-left: 14px;
+    padding-top: 12px;
 }
 
 .write-us-form label {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 18px;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 18px;
 }
 
 .user-data {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .user-data input[type="text"]{
-  width: 220px;
-  height: 34px;
+    width: 220px;
+    height: 34px;
 }
 
 .user-data label {
-  margin-right: 20px;
+    margin-right: 20px;
 }
 
 .user-data label:last-child {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 .button-block {
-  display: flex;
-  background-color: #f4f4f4;
-  padding: 37px 80px;
-  margin-top: 11px;
+    display: flex;
+    background-color: #f4f4f4;
+    padding: 37px 80px;
+    margin-top: 11px;
 }
 
 .form-button {
-  border: 0;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+    border: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .modal-map {
-  display: none;
-  position: fixed;
-  top: 120px;
-  left: 50%;
-  width: 940px;
-  height: 447px;
-  margin-left: -470px;
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    display: none;
+    position: fixed;
+    top: 120px;
+    left: 50%;
+    width: 940px;
+    height: 447px;
+    margin-left: -470px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
 }
 
 .modal-cart-add {
-  display: none;
-  flex-direction: column;
-  top: 120px;
-  left: 50%;
-  width: 620px;
-  margin-left: -310px;
+    display: none;
+    flex-direction: column;
+    top: 120px;
+    left: 50%;
+    width: 620px;
+    margin-left: -310px;
 }
 
 .cart-add-head {
-  background-image: url("../img/icon-mark.svg");
-  background-repeat: no-repeat;
-  background-position: 82px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/icon-mark.svg");
+    background-repeat: no-repeat;
+    background-position: 81px 47px;
 }
 
-.modal-cart-add h2{
-  margin: 0;
-  margin-top: 70px;
-  margin-bottom: 75px;
-  margin-left: 32px;
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  text-align: center;
+.cart-add-head h2{
+    margin: 0 auto;
+    padding-top: 67px;
+    padding-bottom: 64px;
+    margin-left: 180px;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
 }
 
 .modal-show {
-  display: block;
+    display: block;
 }
 
 .modal-close,
-.map-close {
-  position: absolute;
-  top: 9px;
-  right: 9px;
-  width: 21px;
-  height: 21px;
-  cursor: pointer;
-  border: 0;
-  background-color: rgba(255, 255, 255, 0);
-  background-image: url("../img/icon-close.svg");
+.map-close,
+.modal-cart-close {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url("../img/icon-close.svg");
 }
 
 
 .form-cart-button {
-  border: 0;
-  width: 220px;
-  padding: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  cursor: pointer;
+    border: 0;
+    width: 220px;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
 }
 
 .white-form-button {
-  margin-left: 20px;
-  border-radius: 3px;
-  background-color: #ffffff;
-  text-align: center;
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #000000;
-  border: 0;
-  width: 220px;
-  padding: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+    margin-left: 20px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    text-align: center;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000000;
+    border: 0;
+    width: 220px;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

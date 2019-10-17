@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="main-header">
@@ -80,8 +80,8 @@
             <form class="" action="index.html" method="post">
               <span class="filter-name">Цена:</span>
                 <div class="price-track">
-                <a class="price-handle" href="#"><img src="img/filter-button.svg" alt="Ползунок фильтра"></a>
-                <a class="price-handle" href="#"><img src="img/filter-button.svg" alt="Ползунок фильтра"></a>
+                <a class="price-handle" href="#"><img src="img/filter-button.svg" width="20" height="23" alt="Ползунок фильтра"></a>
+                <a class="price-handle" href="#"><img src="img/filter-button.svg" width="20" height="23" alt="Ползунок фильтра"></a>
                 <div class="track-bar">
                   <div class="track-choose"></div>
                 </div>
@@ -394,53 +394,17 @@
         </div>
   </footer>
 
-  <!--Товар добавлен в корзину-->
-  <section class="modal modal-cart-add">
-    <button class="modal-close" type="button" name="close-map"></button>
-    <div class="cart-add-head">
-      <h2>Товар добавлен в корзину!</h2>
-    </div>
-    <div class="button-block">
-      <button class="red-button form-cart-button" type="button" name="order">Оформить заказ</button>
-      <button class="white-form-button" type="button" name="shopping-resume">Продолжить покупки</button>
-    </div>
-  </section>
-    <script>
-
-    var cartAdd = document.querySelectorAll(".buy-button");
-    var popupCartAdd = document.querySelector(".modal-cart-add");
-    var closeForm = document.querySelector(".modal-close");
-
-    for (var i = 0; i < cartAdd.length; i++) {
-      cartAdd[i].addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popupCartAdd.classList.add("modal-show");
-        userName.focus();
-      });
-    }
-
-    // cartAdd.addEventListener("click", function (evt) {
-    //   evt.preventDefault();
-    //   popupCartAdd.classList.add("modal-show");
-    //   userName.focus();
-    // });
-
-    closeForm.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popupCartAdd.classList.remove("modal-show");
-    });
-
-    window.addEventListener("keydown", function(evt) {
-      if (evt.keyCode === 27) {
-        if (popupWriteUs.classList.contains("modal-show")) {
-          evt.preventDefault();
-          popupCartAdd.classList.remove("modal-show");
-        }
-      }
-    });
-
-
-
-</script>
+    <!--Товар добавлен в корзину-->
+    <section class="modal modal-cart-add">
+      <button class="modal-cart-close" type="button" name="close-map"></button>
+      <div class="cart-add-head">
+        <h2>Товар добавлен в корзину!</h2>
+      </div>
+      <div class="button-block">
+        <button class="red-button form-cart-button" type="button" name="order">Оформить заказ</button>
+        <button class="white-form-button" type="button" name="shopping-resume">Продолжить покупки</button>
+      </div>
+    </section>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
