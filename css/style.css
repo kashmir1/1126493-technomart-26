@@ -621,7 +621,7 @@ input[type="text"]:active + label::before {
     background-position: 191px 31px;
 }
 
-.slide-big {
+.slide-big{
     position: relative;
     width: 620px;
     height: 266px;
@@ -660,7 +660,7 @@ input[type="text"]:active + label::before {
     display: block;
 }
 
-.dot-off {
+.dot-1 {
     display: block;
     position: absolute;
     bottom: 36px;
@@ -668,10 +668,9 @@ input[type="text"]:active + label::before {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #ffffff;
 }
 
-.dot-on {
+.dot-2 {
     display: block;
     position: absolute;
     bottom: 36px;
@@ -679,6 +678,15 @@ input[type="text"]:active + label::before {
     width: 10px;
     height: 10px;
     border-radius: 50%;
+    background-color: #ee3643;
+    border: 2px solid #ffffff;
+}
+
+.dot-off {
+    background-color: #ffffff;
+}
+
+.dot-on {
     background-color: #ee3643;
     border: 2px solid #ffffff;
 }
@@ -960,19 +968,31 @@ input[type="text"]:active + label::before {
     background-image: url("../img/delivery.png");
     background-repeat: no-repeat;
     background-position: 150px 0;
-    height: 285px;
+    min-height: 285px;
 }
 
 .guarantee {
-    display: none;
     background-image: url("../img/guarantee.png");
     background-repeat: no-repeat;
+    background-position: 150px 0;
+    min-height: 285px;
 }
 
 .credit {
-    display: none;
     background-image: url("../img/credit.png");
     background-repeat: no-repeat;
+    background-position: 150px 0;
+    min-height: 285px;
+}
+
+.credit-button {
+    display: inline-block;
+    vertical-align: top;
+    bottom: 0;
+    width: 195px;
+    margin-top: 34px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* Хлебные крошки, заголовок внутренней */
