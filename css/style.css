@@ -143,12 +143,18 @@ a.logo:active {
     padding-left: 49px;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
-    color: white;
+    color: #ffffff;
     outline: 0;
     border: none;
     background-color: #293449;
     cursor: pointer;
 }
+
+.header-search input::placeholder {
+    font: inherit;
+    color: #ffffff;
+}
+
 
 .header-search label::before {
     position: relative;
@@ -661,6 +667,9 @@ input[type="text"]:active + label::before {
     top: 113px;
     left: 24px;
     display: block;
+    background-image: url("../img/icon-left.svg");
+    width: 22px;
+    height: 40px;
 }
 
 .control-right {
@@ -668,6 +677,9 @@ input[type="text"]:active + label::before {
     top: 113px;
     right: 24px;
     display: block;
+    background-image: url("../img/icon-right.svg");
+    width: 22px;
+    height: 40px;
 }
 
 .dot-1 {
@@ -889,6 +901,10 @@ input[type="text"]:active + label::before {
     margin-top: 39px;
 }
 
+.service-description {
+    width: 400px;
+}
+
 .service-list {
   display: flex;
   margin-top: 46px;
@@ -981,11 +997,20 @@ input[type="text"]:active + label::before {
     min-height: 285px;
 }
 
+.delivery p {
+  width: 276px;
+}
+
 .guarantee {
     background-image: url("../img/guarantee.png");
     background-repeat: no-repeat;
     background-position: 150px 0;
     min-height: 285px;
+}
+
+.guarantee p,
+.credit p {
+  width: 380px;
 }
 
 .credit {
@@ -1016,6 +1041,14 @@ input[type="text"]:active + label::before {
 
 .breadcrumbs a {
     color: #000000;
+}
+
+.breadcrumbs-home {
+    display: inline-block;
+    vertical-align: baseline;
+    background-image: url("../img/icon-home.svg");
+    width: 15px;
+    height: 12px;
 }
 
 .breadcrumbs li {
@@ -1573,6 +1606,10 @@ input[type="text"]:active + label::before {
     text-transform: uppercase;
 }
 
+.company-list-description {
+    width: 390px;
+}
+
 .company-list {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
@@ -1613,6 +1650,10 @@ input[type="text"]:active + label::before {
 .contact {
     width: 400px;
     padding-left: 90px;
+}
+
+.contact p {
+    width: 180px;
 }
 
 .contact h2 {
@@ -1673,6 +1714,10 @@ input[type="text"]:active + label::before {
     margin: 0;
     padding-top: 30px;
     width: 326px;
+}
+
+.footer-contact a {
+    color: #ffffff;
 }
 
 .footer-menu {
