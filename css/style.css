@@ -1660,7 +1660,13 @@ input[type="text"]:active + label::before {
 }
 
 .footer-logo {
-    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 63px;
+    background-color: #ee3643;
+    border-bottom: 5px solid #b52933;
 }
 
 .footer-contact {
