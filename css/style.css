@@ -83,18 +83,28 @@ input[type="radio"].visually-hidden {
     width: 220px;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 a.logo {
     top: 5px;
-    display: block;
-    background-image: url("../img/logo.png");
-    background-repeat: no-repeat;
+    background-color: #ee3643;
+    border-bottom: 5px solid #b52933;
     width: 220px;
     height: 47px;
 }
 
 a.logo:hover {
-    background-image: url("../img/logo-hover.png");
-    background-repeat: no-repeat;
+  background-color: #ca2c37;
+  border-bottom: 5px solid #9a212a;
+}
+
+a.logo:active {
+  background-color: #ba2732;
+  border-bottom: 5px solid #8e1e26;
 }
 
 
