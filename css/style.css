@@ -49,18 +49,6 @@ input[type="radio"].visually-hidden {
     overflow: hidden;
 }
 
-@font-face {
-    font-family: 'fontello';
-    src: url('../font/fontello.eot?62830095');
-    src: url('../font/fontello.eot?62830095#iefix') format('embedded-opentype'),
-        url('../font/fontello.woff2?62830095') format('woff2'),
-        url('../font/fontello.woff?62830095') format('woff'),
-        url('../font/fontello.ttf?62830095') format('truetype'),
-        url('../font/fontello.svg?62830095#fontello') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* Шапка верх */
 
 .main-header {
@@ -133,6 +121,7 @@ a.logo:active {
 }
 
 .header-search {
+    position: relative;
     width: 270px;
     height: 42px;
 }
@@ -150,25 +139,46 @@ a.logo:active {
     cursor: pointer;
 }
 
+.search-icon {
+    position: absolute;
+    top: 10px;
+    left: 17px;
+}
+
+.search-icon path{
+    opacity: 0.3;
+}
+
+.header-search:hover path {
+  opacity: 1;
+}
+
+.header-search input:focus {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.header-search input:focus + .search-icon path {
+    fill: #ee3643;
+    opacity: 1;
+}
+
 .header-search input::placeholder {
     font: inherit;
     color: #ffffff;
 }
 
 
-.header-search label::before {
+
+/* .header-search label::before {
+    content: "";
     position: relative;
     top: -32px;
     left: 17px;
-    font-size: 17px;
-    font-family: "fontello";
-    text-decoration: inherit;
-    content: "\e814";
-    cursor: pointer;
-    color: rgba(255, 255, 255, 0.3);
-}
+    background-image: url("../img/icon-search.svg");
+} */
 
-input[type="text"]:hover + label::before {
+/* input[type="text"]:hover + label::before {
     color: #ffffff;
     background-color: #212a3a;
 }
@@ -177,14 +187,10 @@ input[type="text"]:focus + label::before,
 input[type="text"]:active + label::before {
     color: #ee3643;
     background-color: #ffffff;
-}
-
-.header-search input:focus {
-    background-color: #ffffff;
-    color: #000000;
-}
+} */
 
 .bookmark {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -195,33 +201,40 @@ input[type="text"]:active + label::before {
     background-color: #293449;
 }
 
+.bookmark::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 17px;
+    width: 14px;
+    height: 16px;
+    background-image: url("../img/icon-bookmark.svg");
+    opacity: 0.3;
+}
+
 .bookmark:hover {
     background-color: #212a3a;
 }
 
+.bookmark:hover::before {
+    opacity: 1;
+}
+
 .bookmark:active {
     background-color: #161d29;
+}
+
+.bookmark:active a{
     color: #8b8e94;
 }
 
-.bookmark::before {
-    position: relative;
-    left: -15px;
-    font-size: 17px;
-    font-family: "fontello";
-    content: "\e808";
-    color: rgba(255, 255, 255, 0.3);
-}
-
-.bookmark:hover::before {
-    color: #ffffff;
-}
-
 .bookmark:active::before {
-    color: rgba(255, 255, 255, 0.5);
+    opacity: 0.5;
 }
+
 
 .cart {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -241,12 +254,14 @@ input[type="text"]:active + label::before {
 }
 
 .cart::before {
-    position: relative;
-    left: -15px;
-    font-size: 17px;
-    font-family: "fontello";
-    content: "\e81f";
-    color: rgba(255, 255, 255, 0.3);
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/icon-cart.svg");
+  opacity: 0.3;
 }
 
 .cart:hover::before {
@@ -258,6 +273,7 @@ input[type="text"]:active + label::before {
 }
 
 .cart-add {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -267,13 +283,14 @@ input[type="text"]:active + label::before {
 }
 
 .cart-add::before {
-    position: relative;
-    left: -15px;
-    font-size: 17px;
-    font-size: 17px;
-    font-family: "fontello";
-    content: "\e81f";
-    color: rgba(255, 255, 255, 0.3);
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 17px;
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/icon-cart.svg");
+    opacity: 0.3;
 }
 
 .create-order {
@@ -394,23 +411,16 @@ input[type="text"]:active + label::before {
     color: #ee3643;
 }
 
+.user-enter:hover path{
+    fill: #32425c;
+}
+
 .user-enter:active {
     color: #c5c5c5;
 }
 
-.user-enter::before {
-    margin-right: 14px;
-    font-family: "fontello";
-    content: "\e810";
-    color: #c5c5c5;
-}
-
-.user-enter:hover::before {
-    color: #32425c;
-}
-
-.user-enter:active::before {
-    color: #c5c5c5;
+.user-enter:active path{
+    fill: #c5c5c5;
 }
 
 .registration {
@@ -437,15 +447,18 @@ input[type="text"]:active + label::before {
     color: #000000;
 }
 
-.user-login::before {
-    margin-right: 14px;
-    font-family: "fontello";
-    content: "\e819";
-    color: #c5c5c5;
+.user-login:hover path,
+.logout:hover path {
+    fill: #32425c;
 }
 
 .user-login:active {
     color: rgba(0, 0, 0, 0.3);
+}
+
+.user-login:active path,
+.logout:active path {
+    fill: #c5c5c5;
 }
 
 .logout {
@@ -453,28 +466,13 @@ input[type="text"]:active + label::before {
     background-color: #ffffff;
 }
 
-.logout::before {
-    font-family: "fontello";
-    content: "\e811";
-    color: #c5c5c5;
-}
-
-.user-login:hover::before,
-.logout:hover::before {
-    color: #32425c;
-}
-
-.user-login:active::before,
-.logout:active::before {
-    color: #c5c5c5;
-}
 
 .user-links {
-  display: flex;
-  align-items: center;
-  margin-top: 7px;
-  padding-left: 10px;
-  list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+    padding-left: 10px;
+    list-style: none;
 }
 
 .user-links a {
@@ -1142,10 +1140,15 @@ input[type="text"]:active + label::before {
     height: 38px;
     text-align: center;
     background-color: #f7f3ec;
+    font-family: inherit;
     font-size: 17px;
     color: #000000;
     border: 0;
     border-radius: 4px;
+}
+
+.price-input::placeholder {
+    color: #000000;
 }
 
 .price-dash {
@@ -1161,6 +1164,9 @@ input[type="text"]:active + label::before {
   position: absolute;
   top: 29px;
   left: 20px;
+  width: 20px;
+  height: 23px;
+  background-image: url("../img/filter-button.svg");
 }
 
 .price-handle:nth-child(2) {
@@ -1260,6 +1266,7 @@ input[type="text"]:active + label::before {
     background-color: #ffffff;
     border: 1px solid #e5e5e5;
     border-radius: 3px;
+    font-family: inherit;
 }
 
 /* Сортировка */
@@ -1274,6 +1281,8 @@ input[type="text"]:active + label::before {
 .sorting-title {
     margin-left: 19px;
     text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
 }
 
 .sorting-price {
@@ -1308,43 +1317,32 @@ input[type="text"]:active + label::before {
     border: 0;
 }
 
-.sorting-up::before {
+.sorting-up {
     margin-left: 46px;
-    font-family: "fontello";
-    content: "\e818";
-    color: #ee3643;
 }
 
-.sorting-up:hover::before {
-    font-family: "fontello";
-    content: "\e818";
-    color: #000000;
+.sorting-up path {
+    fill: #ee3643;
 }
 
-.sorting-up:active::before {
-    font-family: "fontello";
-    content: "\e818";
-    color: #ee3643;
-}
-
-.sorting-down::before {
+.sorting-down {
     margin-left: 15px;
-    font-family: "fontello";
-    content: "\e80b";
-    color: #c5c5c5;
 }
 
-.sorting-down:hover::before {
-    font-family: "fontello";
-    content: "\e80b";
-    color: #000000;
+.sorting-down path {
+    fill: #c5c5c5;
 }
 
-.sorting-down:active::before {
-    font-family: "fontello";
-    content: "\e80b";
-    color: #ee3643;
+.sorting-up:hover path,
+.sorting-down:hover path {
+    fill: #000000;
 }
+
+.sorting-up:active path,
+.sorting-down:active path {
+    fill: #ee3643;
+}
+
 
 .catalog-wrapper {
     display: flex;
@@ -1429,12 +1427,14 @@ input[type="text"]:active + label::before {
 }
 
 .buy-button::before {
+    content: "";
     position: absolute;
-    top: 4px;
+    top: 9px;
     left: 12px;
-    font-family: "fontello";
-    content: "\e81f";
-    color: rgba(255, 255, 255, 0.3);
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/icon-cart.svg");
+    opacity: 0.3;
 }
 
 .buy-button:hover {
@@ -1448,7 +1448,7 @@ input[type="text"]:active + label::before {
 
 .buy-button:hover::before,
 .buy-button:active::before {
-    color: #ffffff;
+    opacity: 1;
 }
 
 .bookmark-button {
@@ -1874,8 +1874,14 @@ input[type="text"]:active + label::before {
 .write-us-form textarea::placeholder {
     color: #a9a9a9;
     font-size: 13px;
+}
+
+.write-us-form textarea {
     padding-left: 14px;
     padding-top: 12px;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    color: #999999;
 }
 
 .write-us-form label {
@@ -1891,6 +1897,10 @@ input[type="text"]:active + label::before {
 .user-data input[type="text"]{
     width: 220px;
     height: 34px;
+    padding-left: 14px;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    color: #999999;
 }
 
 .user-data label {
