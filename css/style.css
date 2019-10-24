@@ -244,7 +244,7 @@ input[type="text"]:active + label::before {
     padding-top: 9px;
     padding-bottom: 9px;
     padding-left: 13px;
-    width: 144px;
+    width: 150px;
     background-color: #293449;
 }
 
@@ -284,6 +284,7 @@ input[type="text"]:active + label::before {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 15px;
     width: 156px;
     height: 42px;
     background-color: #ee3643;
@@ -335,7 +336,8 @@ input[type="text"]:active + label::before {
 }
 
 .slogan {
-    width: 290px;
+    /* width: 290px; */
+    width: 280px;
     margin: 0;
     padding-left: 52px;
     padding-top: 5px;
@@ -358,7 +360,7 @@ input[type="text"]:active + label::before {
     margin-left: 5px;
     padding-top: 7px;
     padding-bottom: 10px;
-    padding-left: 70px;
+    padding-left: 72px;
     border: solid 3px #ffffff;
     font-size: 21px;
     color: #ee3643;
@@ -368,7 +370,7 @@ input[type="text"]:active + label::before {
 
 .adress {
     margin-top: 4px;
-    margin-left: 13px;
+    margin-left: 15px;
     font-size: 14px;
     color: #32425c;
 }
@@ -377,7 +379,7 @@ input[type="text"]:active + label::before {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     width: 300px;
     font-size: 21px;
 }
@@ -407,7 +409,8 @@ input[type="text"]:active + label::before {
 .user-enter {
     display: flex;
     align-items: center;
-    padding-left: 15px;
+    margin-left: 15px;
+    padding-left: 12px;
     width: 121px;
     height: 45px;
     background-color: #ffffff;
@@ -438,7 +441,7 @@ input[type="text"]:active + label::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 5px;
+    padding-left: 3px;
     width: 150px;
     height: 45px;
     margin-left: 10px;
@@ -457,6 +460,14 @@ input[type="text"]:active + label::before {
 .user-login {
     display: flex;
     color: #000000;
+}
+
+.user-icon {
+    margin-top: 2px;
+}
+
+.user-name {
+    padding-left: 15px;
 }
 
 .user-login:hover path,
@@ -482,8 +493,8 @@ input[type="text"]:active + label::before {
 .user-links {
     display: flex;
     align-items: center;
-    margin-top: 7px;
-    padding-left: 10px;
+    margin: 0;
+    padding-left: 15px;
     list-style: none;
 }
 
@@ -800,7 +811,7 @@ input[type="text"]:active + label::before {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 20px;
     background-color: #f9f5f0;
 }
@@ -850,11 +861,11 @@ input[type="text"]:active + label::before {
 
 .catalog-popular-item h3 {
     margin: 0;
-    margin-top: 12px;
     margin-left: 30px;
     margin-right: 30px;
     font-size: 18px;
     font-weight: bold;
+    line-height: 20px;
 }
 
 .catalog-popular-item:hover {
@@ -919,7 +930,7 @@ input[type="text"]:active + label::before {
 
 .service p {
     margin: 0;
-    margin-top: 39px;
+    margin-top: 30px;
 }
 
 .service-description {
@@ -928,8 +939,7 @@ input[type="text"]:active + label::before {
 
 .service-list {
   display: flex;
-  margin-top: 46px;
-
+  margin-top: 70px;
 }
 
 
@@ -1014,7 +1024,7 @@ input[type="text"]:active + label::before {
 .delivery {
     background-image: url("../img/delivery.png");
     background-repeat: no-repeat;
-    background-position: 150px 0;
+    background-position: 150px 20px;
     min-height: 285px;
 }
 
@@ -1047,8 +1057,8 @@ input[type="text"]:active + label::before {
     bottom: 0;
     width: 195px;
     margin-top: 34px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 /* Хлебные крошки, заголовок внутренней */
@@ -1512,6 +1522,7 @@ input[type="text"]:active + label::before {
     width: 141px;
     height: 38px;
     margin-top: auto;
+    margin-left: 5px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -1524,7 +1535,8 @@ input[type="text"]:active + label::before {
 }
 
 .old-price {
-    margin-bottom: 13px;
+    margin-top: 7px;
+    margin-bottom: 8px;
     font-size: 17px;
     font-weight: bold;
     color: #999999;
@@ -1605,7 +1617,7 @@ input[type="text"]:active + label::before {
 }
 
 .index-column {
-    margin-top: 82px;
+    margin-top: 80px;
     margin-bottom: 86px;
     display: flex;
     justify-content: space-between;
@@ -1629,11 +1641,17 @@ input[type="text"]:active + label::before {
     text-transform: uppercase;
 }
 
+.company p {
+    margin-top: 27px;
+}
+
 .company-list-description {
     width: 390px;
 }
 
 .company-list {
+    margin-top: 10px;
+    margin-bottom: 0;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -1660,11 +1678,12 @@ input[type="text"]:active + label::before {
 .about-button {
     display: inline-block;
     vertical-align: top;
-    position: absolute;
-    bottom: 0;
+    margin-top: 25px;
+    /* position: absolute;
+    bottom: 0; */
     width: 220px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 
@@ -1672,11 +1691,12 @@ input[type="text"]:active + label::before {
 /* Контакты */
 .contact {
     width: 400px;
-    padding-left: 90px;
+    padding-left: 100px;
 }
 
 .contact p {
     width: 180px;
+    margin-top: 27px;
 }
 
 .contact h2 {
@@ -1690,16 +1710,16 @@ input[type="text"]:active + label::before {
 .map {
     display: inline-block;
     vertical-align: top;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-bottom: 33px;
 }
 
 .contact-button {
     display: inline-block;
     vertical-align: top;
     width: 300px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 
@@ -1715,7 +1735,7 @@ input[type="text"]:active + label::before {
 .top-footer {
     display: flex;
     font-size: 18px;
-    padding-bottom: 26px;
+    padding-bottom: 47px;
 }
 
 .footer-text {
@@ -1728,7 +1748,7 @@ input[type="text"]:active + label::before {
     align-items: center;
     justify-content: center;
     width: 220px;
-    height: 63px;
+    height: 68px;
     background-color: #ee3643;
     border-bottom: 5px solid #b52933;
 }
@@ -1736,7 +1756,8 @@ input[type="text"]:active + label::before {
 .footer-contact {
     margin: 0;
     padding-top: 30px;
-    width: 326px;
+    padding-left: 5px;
+    width: 336px;
 }
 
 .footer-contact a {
@@ -1746,6 +1767,7 @@ input[type="text"]:active + label::before {
 .footer-menu {
     width: 610px;
     margin-top: 40px;
+    margin-left: 5px;
 }
 
 .footer-menu-top,
@@ -1757,7 +1779,7 @@ input[type="text"]:active + label::before {
 }
 
 .footer-menu-bot {
-    padding-top: 40px;
+    padding-top: 32px;
 }
 
 .footer-menu-top a {
@@ -1799,12 +1821,14 @@ input[type="text"]:active + label::before {
 
 .copyright {
     width: 230px;
+    line-height: 20px;
 }
 
 .social {
     display: flex;
     width: 160px;
     list-style: none;
+    padding-left: 65px;
 }
 
 .social-list {
@@ -1825,11 +1849,14 @@ input[type="text"]:active + label::before {
 }
 
 .feedback {
-  width: 140px;
+    width: 165px;
+    padding-left: 65px;
+    line-height: 20px;
 }
 
 .academy-link {
   width: 115px;
+  line-height: 20px;
 }
 
 
