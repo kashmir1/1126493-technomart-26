@@ -164,27 +164,6 @@ a.logo:active {
     color: #ffffff;
 }
 
-
-
-/* .header-search label::before {
-    content: "";
-    position: relative;
-    top: -32px;
-    left: 17px;
-    background-image: url("../img/icon-search.svg");
-} */
-
-/* input[type="text"]:hover + label::before {
-    color: #ffffff;
-    background-color: #212a3a;
-}
-
-input[type="text"]:focus + label::before,
-input[type="text"]:active + label::before {
-    color: #ee3643;
-    background-color: #ffffff;
-} */
-
 .bookmark {
     position: relative;
     display: flex;
@@ -330,7 +309,6 @@ input[type="text"]:active + label::before {
 }
 
 .slogan {
-    /* width: 290px; */
     width: 280px;
     margin: 0;
     padding-left: 52px;
@@ -373,7 +351,6 @@ input[type="text"]:active + label::before {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    /* margin-left: 20px; */
     width: 300px;
     font-size: 21px;
 }
@@ -629,7 +606,6 @@ input[type="text"]:active + label::before {
 .slide-maths {
     position: relative;
     width: 300px;
-    /* height: 123px; */
     overflow: hidden;
     padding-left: 25px;
     background-color: #ffbf47;
@@ -1335,6 +1311,7 @@ input[type="text"]:active + label::before {
 
 .sorting-price {
     margin-left: 140px;
+    padding-top: 3px;
     text-transform: uppercase;
     color: #ee3643;
     text-decoration: none;
@@ -1343,6 +1320,7 @@ input[type="text"]:active + label::before {
 .sorting-type,
 .sorting-functional {
     margin-left: 72px;
+    padding-top: 3px;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.3);
     text-decoration: none;
@@ -1367,6 +1345,8 @@ input[type="text"]:active + label::before {
 
 .sorting-up {
     margin-left: 46px;
+    padding-top: 5px;
+    padding-left: 3px;
 }
 
 .sorting-up path {
@@ -1375,6 +1355,8 @@ input[type="text"]:active + label::before {
 
 .sorting-down {
     margin-left: 15px;
+    padding-top: 5px;
+    padding-left: 5px;
 }
 
 .sorting-down path {
@@ -1407,7 +1389,7 @@ input[type="text"]:active + label::before {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 23px;
+  margin-top: 24px;
 }
 
 .catalog-item {
@@ -1590,20 +1572,20 @@ input[type="text"]:active + label::before {
 }
 
 .page-next {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 138px;
-  height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 138px;
+    height: 38px;
 }
 
 .around-active,
 .page-next {
-  margin-left: 10px;
-  border-radius: 3px;
-  border: 1px solid #e5e5e5;
-  color: #000000;
-  text-align: center;
+    margin-left: 10px;
+    border-radius: 3px;
+    border: 1px solid #e5e5e5;
+    color: #000000;
+    text-align: center;
 }
 
 .around-active:hover,
@@ -1698,8 +1680,6 @@ input[type="text"]:active + label::before {
     display: inline-block;
     vertical-align: top;
     margin-top: 25px;
-    /* position: absolute;
-    bottom: 0; */
     width: 220px;
     padding-top: 7px;
     padding-bottom: 7px;
