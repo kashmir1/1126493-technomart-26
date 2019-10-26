@@ -508,8 +508,8 @@ a.logo:active {
     justify-content: space-around;
     flex-wrap: wrap;
     min-height: 60px;
-    padding: 0;
-    margin: 0;
+    /* padding: 0;
+    margin: 0; */
     padding-left: 25px;
     padding-right: 25px;
     margin-top: 25px;
@@ -519,11 +519,13 @@ a.logo:active {
 
 
 .site-navigation a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     vertical-align: top;
     color: #ffffff;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 30px;
     padding-right: 30px;
     width: 100%;
@@ -1052,7 +1054,7 @@ a.logo:active {
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-top: 20px;
+    margin-top: 18px;
 }
 
 .breadcrumbs a {
