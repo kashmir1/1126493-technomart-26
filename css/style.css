@@ -321,7 +321,7 @@ a.logo:active {
 
 .header-contact {
     width: 340px;
-    margin-left: 40px;
+    margin-left: 70px;
 }
 
 .phone {
@@ -341,6 +341,7 @@ a.logo:active {
 }
 
 .adress {
+    width: 260px;
     margin-top: 4px;
     margin-left: 15px;
     font-size: 14px;
@@ -351,7 +352,7 @@ a.logo:active {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    width: 300px;
+    width: 296px;
     font-size: 21px;
 }
 
