@@ -384,8 +384,7 @@ a.logo:active {
 .user-enter {
     display: flex;
     align-items: center;
-    /* margin-left: 15px; */
-    padding-left: 12px;
+    padding-left: 15px;
     width: 121px;
     height: 45px;
     background-color: #ffffff;
@@ -442,7 +441,7 @@ a.logo:active {
 }
 
 .user-name {
-    padding-left: 15px;
+    padding-left: 10px;
 }
 
 .user-login:hover path,
@@ -670,42 +669,49 @@ a.logo:active {
     position: absolute;
     top: 113px;
     left: 24px;
-    display: block;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
     background-image: url("../img/icon-left.svg");
     width: 22px;
     height: 40px;
+    cursor: pointer;
 }
 
 .control-right {
     position: absolute;
     top: 113px;
     right: 24px;
-    display: block;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
     background-image: url("../img/icon-right.svg");
     width: 22px;
     height: 40px;
+    cursor: pointer;
 }
 
 .dot-1 {
-    display: block;
     position: absolute;
     bottom: 36px;
     left: 295px;
     width: 10px;
     height: 10px;
+    padding: 0;
     border-radius: 50%;
+    cursor: pointer;
 }
 
+
 .dot-2 {
-    display: block;
     position: absolute;
     bottom: 36px;
     right: 295px;
     width: 10px;
     height: 10px;
+    padding: 0;
     border-radius: 50%;
     background-color: #ee3643;
     border: 2px solid #ffffff;
+    cursor: pointer;
 }
 
 .dot-off {
@@ -1193,7 +1199,10 @@ a.logo:active {
   left: 20px;
   width: 20px;
   height: 23px;
+  background-color: rgba(255, 255, 255, 0);
   background-image: url("../img/filter-button.svg");
+  cursor: pointer;
+  border: 0;
 }
 
 .price-handle:nth-child(2) {
@@ -1840,9 +1849,9 @@ a.logo:active {
 
 .social {
     display: flex;
-    width: 160px;
+    width: 200px;
     list-style: none;
-    padding-left: 65px;
+    padding-left: 78px;
 }
 
 .social-list {
@@ -1864,7 +1873,7 @@ a.logo:active {
 
 .feedback {
     width: 165px;
-    padding-left: 65px;
+    padding-left: 59px;
     line-height: 20px;
 }
 
@@ -2034,8 +2043,28 @@ a.logo:active {
     text-align: center;
 }
 
+@keyframes bounce {
+    0% {
+      transform: translateY(-2000px);
+    }
+
+    70% {
+      transform: translateY(30px);
+    }
+
+    90% {
+      transform: translateY(-10px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+}
+
 .modal-show {
     display: block;
+    animation-name: bounce;
+    animation-duration: 0.6s;
 }
 
 .modal-close,
@@ -2051,7 +2080,6 @@ a.logo:active {
     background-color: rgba(255, 255, 255, 0);
     background-image: url("../img/icon-close.svg");
 }
-
 
 .form-cart-button {
     border: 0;
